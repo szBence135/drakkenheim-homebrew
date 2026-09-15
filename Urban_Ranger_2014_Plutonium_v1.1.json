@@ -1,0 +1,241 @@
+{
+  "_meta": {
+    "internalCopies": [
+      "subclass",
+      "subclassFeature"
+    ],
+    "sources": [
+      {
+        "json": "URBN",
+        "abbreviation": "URBN",
+        "full": "Urban Ranger",
+        "version": "1.0.0",
+        "authors": [
+          "Private Homebrew"
+        ],
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "edition": "classic"
+  },
+  "subclass": [
+    {
+      "name": "Urban Ranger",
+      "shortName": "Urban Ranger",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "edition": "classic",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "feather fall"
+            ],
+            "5": [
+              "invisibility"
+            ],
+            "9": [
+              "haste"
+            ],
+            "13": [
+              "dimension door"
+            ],
+            "17": [
+              "animate objects"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Urban Ranger|Ranger||Urban Ranger|URBN|3",
+        "Rooftop Mobility|Ranger||Urban Ranger|URBN|7",
+        "Perfect Position|Ranger||Urban Ranger|URBN|11",
+        "Sitting Duck|Ranger||Urban Ranger|URBN|15"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Urban Ranger",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 3,
+      "entries": [
+        "Urban rangers are less accustomed to nature and the wilds, but to the rooftops and guerrilla tactics of city warfare. Training for maneuverability and stealth amongst ruined buildings, and twisting streets, these rangers are at home amongst the ruins and rubble. They are agile runners, skilled snipers, and always able to know where the best vantage points against their enemies are.",
+        {
+          "type": "entries",
+          "name": "Urban Ranger Features",
+          "entries": [
+            {
+              "type": "refSubclassFeature",
+              "subclassFeature": "Urban Ranger Magic|Ranger||Urban Ranger|URBN|3"
+            },
+            {
+              "type": "refSubclassFeature",
+              "subclassFeature": "Gutter Runner|Ranger||Urban Ranger|URBN|3"
+            },
+            {
+              "type": "refSubclassFeature",
+              "subclassFeature": "Vantage Point|Ranger||Urban Ranger|URBN|3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Urban Ranger Magic",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You learn an additional spell when you reach certain levels in this class, as shown in the Urban Ranger Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+        {
+          "type": "table",
+          "caption": "Urban Ranger Spells",
+          "colLabels": [
+            "Ranger Level",
+            "Spell"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell feather fall}"
+            ],
+            [
+              "5th",
+              "{@spell invisibility}"
+            ],
+            [
+              "9th",
+              "{@spell haste}"
+            ],
+            [
+              "13th",
+              "{@spell dimension door}"
+            ],
+            [
+              "17th",
+              "{@spell animate objects}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gutter Runner",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 3,
+      "header": 1,
+      "skillProficiencies": [
+        {
+          "athletics": true,
+          "acrobatics": true
+        }
+      ],
+      "foundryEffects": [
+        {
+          "name": "Gutter Runner",
+          "changes": [
+            {
+              "key": "system.skills.ath.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            },
+            {
+              "key": "system.skills.acr.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            }
+          ],
+          "transfer": true
+        }
+      ],
+      "entries": [
+        "You gain a climb speed equal to your walking speed, and proficiency in the Athletics and Acrobatics skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.",
+        "In addition, when you take the Dash action on your turn, you can move through other creatures' spaces without penalty (but you cannot stop there). When you do, your movement doesn't provoke opportunity attacks."
+      ]
+    },
+    {
+      "name": "Vantage Point",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "When you make a ranged weapon attack against a creature, you gain advantage on the attack roll if there are no other creatures within 5 feet of that target, or if you are 20 feet or more above the target and the creature doesn't have cover."
+      ]
+    },
+    {
+      "name": "Rooftop Mobility",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 7,
+      "header": 1,
+      "entries": [
+        "Your movement speed increases by 10 feet. In addition, you can take the Dash action as a bonus action on your turn.",
+        "You have mastered the means to propel yourself forwards and upwards when you move and climb. When you take the Dash action on your turn, your jumping distance increases to match your movement speed."
+      ],
+      "foundryEffects": [
+        {
+          "name": "Rooftop Mobility",
+          "changes": [
+            {
+              "key": "system.attributes.movement.walk",
+              "mode": "ADD",
+              "value": "10"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Perfect Position",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 11,
+      "header": 1,
+      "entries": [
+        "When you attack a creature with the benefits of your Vantage Point feature, you deal an additional {@damage 2d6} damage to the target, and score a critical hit on a {@dice d20} roll of 19–20."
+      ]
+    },
+    {
+      "name": "Sitting Duck",
+      "source": "URBN",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "subclassShortName": "Urban Ranger",
+      "subclassSource": "URBN",
+      "level": 15,
+      "header": 1,
+      "entries": [
+        "Once on your turn, when you hit a creature that did not move on its last turn with a ranged weapon attack, that attack automatically becomes a critical hit."
+      ]
+    }
+  ]
+}

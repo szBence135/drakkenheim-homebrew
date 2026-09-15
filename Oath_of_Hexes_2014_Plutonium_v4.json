@@ -1,0 +1,252 @@
+{
+  "_meta": {
+    "internalCopies": [
+      "subclass",
+      "subclassFeature"
+    ],
+    "sources": [
+      {
+        "json": "OHEX",
+        "abbreviation": "OHEX",
+        "full": "Oath of Hexes",
+        "version": "1.0.0",
+        "authors": [
+          "Private Homebrew"
+        ],
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "edition": "classic"
+  },
+  "subclass": [
+    {
+      "name": "Oath of Hexes",
+      "shortName": "Hexes",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "edition": "classic",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "hellish rebuke",
+              "Tasha's hideous laughter",
+              "eldritch blast"
+            ],
+            "5": [
+              "invisibility",
+              "suggestion"
+            ],
+            "9": [
+              "bestow curse",
+              "fear"
+            ],
+            "13": [
+              "dimension door",
+              "polymorph"
+            ],
+            "17": [
+              "dominate person",
+              "mislead"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Hexes|Paladin||Hexes|OHEX|3",
+        "Bewitching Aura|Paladin||Hexes|OHEX|7",
+        "Reversal of Fortune|Paladin||Hexes|OHEX|15",
+        "Death Hex|Paladin||Hexes|OHEX|20"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Oath of Hexes",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 3,
+      "entries": [
+        "Those who swear an oath of hexes are sworn to witch covens, fey creatures, and occult deities of magic, fate, and death. In exchange, this sacred oath empowers paladins with fickle magic to curse those who would try to tempt fate or escape the ire of the Old Gods.",
+        {
+          "type": "entries",
+          "name": "Tenets of Hexes",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                {
+                  "type": "entries",
+                  "name": "Serve the Occult.",
+                  "entries": [
+                    "Deities with power over the future have infused you with occult magic. Through your oath, you are made a mortal vessel for their inscrutable will."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Keeper of Secrets.",
+                  "entries": [
+                    "This world harbors dark secrets which are best kept long forgotten. You stand as the protectors of those secrets, preventing them from falling into the hands of weak-willed mortals who would misuse them to evil ends."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Arbiter of Fate.",
+                  "entries": [
+                    "The strands of fate were woven long ago, and it is folly to fight them. Misfortune befalls all."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Show No Mercy.",
+                  "entries": [
+                    "Though some think your strange powers are dark or corrupted, you vanquish evil with the very curses and magics that they would use against you. Show no mercy to those who resist their fate."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Oath Spells|Paladin||Hexes|OHEX|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Curse of Hexes|Paladin||Hexes|OHEX|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Curse of Torment|Paladin||Hexes|OHEX|3"
+        }
+      ]
+    },
+    {
+      "name": "Oath Spells",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You gain oath spells at the paladin levels listed.",
+        {
+          "type": "table",
+          "caption": "Oath of Hexes Spells",
+          "colLabels": [
+            "Paladin Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell hellish rebuke}, {@spell hideous laughter}, {@spell eldritch blast}"
+            ],
+            [
+              "5th",
+              "{@spell invisibility}, {@spell suggestion}"
+            ],
+            [
+              "9th",
+              "{@spell bestow curse}, {@spell fear}"
+            ],
+            [
+              "13th",
+              "{@spell dimension door}, {@spell polymorph}"
+            ],
+            [
+              "17th",
+              "{@spell dominate person}, {@spell mislead}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Curse of Hexes",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 3,
+      "header": 1,
+      "consumes": {
+        "name": "Channel Divinity"
+      },
+      "entries": [
+        "As an action, you curse one creature you can see within 30 feet of you. When you curse a target, choose an ability score. The chosen creature has disadvantage on attack rolls, saving throws, and ability checks using that ability score for 1 minute or until it drops to 0 hit points or falls unconscious.",
+        "At the end of each of the cursed creature's turns, it can make a Charisma saving throw against your spell save DC. On a successful save, the curse ends."
+      ]
+    },
+    {
+      "name": "Curse of Torment",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 3,
+      "header": 1,
+      "consumes": {
+        "name": "Channel Divinity"
+      },
+      "entries": [
+        "As a bonus action, you curse one creature you can see within 30 feet of you. Searing pain wracks the target for 1 minute.",
+        "While suffering this pain, it takes necrotic damage equal to your paladin level at the start of each of its turns.",
+        "At the end of each of the cursed creature's turns, it can make a Wisdom saving throw against your spell save DC. On a successful save, the pain ends."
+      ]
+    },
+    {
+      "name": "Bewitching Aura",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 7,
+      "header": 1,
+      "entries": [
+        "You emit an eldritch aura out to a range of 10 feet. When an enemy hits you or a creature within 10 feet of you with an attack, you can use your reaction to force that enemy to make a Charisma saving throw against your spell save DC.",
+        "On a failed save, you can magically redirect the attack to another creature of your choice within 10 feet of you and within range of the attack. The new target is hit by the attack and suffers all damage and effects.",
+        "At 18th level, the range of this aura increases to 30 feet."
+      ]
+    },
+    {
+      "name": "Reversal of Fortune",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 15,
+      "header": 1,
+      "entries": [
+        "Whenever a creature scores a critical hit against you, the next time you hit that creature with an attack, that attack automatically becomes a critical hit."
+      ]
+    },
+    {
+      "name": "Death Hex",
+      "source": "OHEX",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "Hexes",
+      "subclassSource": "OHEX",
+      "level": 20,
+      "header": 1,
+      "entries": [
+        "A creature afflicted by your Curse of Hexes or Curse of Torment becomes vulnerable to all damage."
+      ]
+    }
+  ]
+}
