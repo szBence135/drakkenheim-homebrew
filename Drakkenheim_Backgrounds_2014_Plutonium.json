@@ -1,0 +1,495 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SCGD",
+        "abbreviation": "SCGD",
+        "full": "Sebastian Crowe's Guide to Drakkenheim",
+        "version": "2.3.0",
+        "authors": [
+          "Private Homebrew"
+        ],
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "edition": "classic"
+  },
+  "background": [
+    {
+      "name": "Continental Nobility",
+      "source": "SCGD",
+      "edition": "classic",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "persuasion",
+              "athletics",
+              "history",
+              "intimidation"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "anyStandard": 2
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            {
+              "special": "a signet ring or brooch bearing your family crest"
+            },
+            {
+              "special": "a cape in the colours of your house"
+            },
+            "fine clothes|phb",
+            {
+              "item": "pouch|phb",
+              "containsValue": 2500
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Requirements:",
+              "entry": "Any class except sorcerer, warlock, or wizard"
+            },
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "Two of the following: {@skill Persuasion}, {@skill Athletics}, {@skill History}, or {@skill Intimidation}"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "Two of your choice"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "A signet ring or brooch bearing your family crest, a cape in the colours of your house, a set of {@item fine clothes|phb}, and a {@item pouch|phb} containing 25 gp"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Background",
+          "entries": [
+            "You are the scion of a noble household. Whether you hail from Caspia, Elyria, or Westemar, the fall of Drakkenheim has either adversely impacted your family’s fortunes, or created a tantalizing opportunity to increase your political power and influence."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Noble Confidence",
+          "entries": [
+            "During a short rest you can give an inspiring pep talk to a number of allies equal to your proficiency bonus. Once in the next 8 hours, each of those allies can roll {@dice 1d4} and add it to the result of a single attack roll, ability check, or saving throw."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Variant: Last of the Line",
+          "entries": [
+            "In the years following the destruction of Drakkenheim, calamity and misfortune wracked your house leaving you the sole surviving heir. Penniless and without land, you have come to Drakkenheim to rebuild your family’s legacy."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mageborn",
+      "source": "SCGD",
+      "edition": "classic",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "arcana",
+              "deception",
+              "investigation",
+              "perception"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "draconic",
+              "elvish"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "calligrapher's supplies",
+              "alchemist's supplies"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            {
+              "special": "a gnarled wand made of wood"
+            },
+            {
+              "special": "a duster jacket"
+            },
+            {
+              "special": "a satchel for material components and potions"
+            },
+            {
+              "special": "an amulet or other trinket of importance to you"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Requirement:",
+              "entry": "You must be a bard, sorcerer, warlock, or wizard"
+            },
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "Two of the following: {@skill Arcana}, {@skill Deception}, {@skill Investigation}, or {@skill Perception}"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "Draconic or Elven"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "A gnarled wand made of wood, a duster jacket, a satchel for material components and potions, an amulet or other trinket of importance to you"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "Either {@item Calligrapher's Supplies|PHB} or {@item Alchemist's Supplies|PHB}"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Background",
+          "entries": [
+            "You manifested arcane magical abilities at a young age, and were taken into the guardianship of the Amethyst Academy. You learned to harness your magic at a secluded magical school. After you came of age and completed your apprenticeship, you became free to pursue your own interests, but you must respect the laws and customs that govern all those with spellcasting powers. Under the Edicts of Lumen, mages are disinherited of any noble titles, and cannot own land."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Bookworm",
+          "entries": [
+            "Once per day after you finish a long rest, you can spend one hour to create a {@item Spell Scroll|PHB}. You need only paper and ink to do so, and the level of the spell you can create equals one half your proficiency bonus (rounded down) or lower. The scroll you create must be a spell you know or have prepared."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Variant: Malfeasant Mage",
+          "entries": [
+            "You were expelled from the Amethyst Academy for some trespass, real or imagined, or perhaps you were never taken in by them and learned magic on your own. Common folk are often mistrustful of spellcasters who do not wear the Amethyst Academy colours, so you need to hide your identity and abilities, especially from the Amethyst Academy and the Knights of the Silver Order."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Devoted Missionary",
+      "source": "SCGD",
+      "edition": "classic",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "history",
+              "religion",
+              "arcana",
+              "nature"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "anyStandard": 2
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            {
+              "special": "a set of pale robes"
+            },
+            {
+              "special": "a small chip of delerium encased in glass"
+            },
+            {
+              "special": "a walking stick"
+            },
+            {
+              "special": "an amulet with a symbol of your chosen god"
+            },
+            {
+              "item": "book|phb",
+              "displayName": "a small book of religious text"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "Two of the following: {@skill History}, {@skill Religion}, {@skill Arcana}, or {@skill Nature}"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "A set of pale robes, a small chip of delerium encased in glass, a walking stick, an amulet with a symbol of your chosen god, a small book of religious text"
+            },
+            {
+              "type": "item",
+              "name": "Languages:",
+              "entry": "Any two of your choice"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Background",
+          "entries": [
+            "You are a follower of one of the many religions of the world. Through either divine calling, visions, or prophecies, or because your church sent you as an envoy and representative, or maybe because you are seeking divine answers, you have made the journey to Drakkenheim. What sacred purpose lies in the ruins that you are quested with uncovering?"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Guided by Faith",
+          "entries": [
+            "A number of times per day equal to your proficiency bonus, you may ask the Game Master to reveal the DC of any ability check you make before rolling the dice. You may then decide whether or not you wish to attempt the roll."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Variant: Stargazer",
+          "entries": [
+            "You witnessed the meteor 15 years ago. Whether you believe it to be destiny, a magical or divine calling, or just curiosity of the secrets that need to be unearthed, you are drawn to the crater. You believe that the crater holds some answers to the questions you seek, and that somewhere in Drakkenheim lies a truth beyond your comprehension. Your pilgrimage to Drakkenheim may have taken you weeks, months or even years but you had to come - something called you here and you must discover its origin."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Survivor",
+      "source": "SCGD",
+      "edition": "classic",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "perception",
+              "survival",
+              "stealth",
+              "athletics"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "cook's utensils": true,
+          "anyArtisansTool": 1
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "cook's utensils|phb",
+            "climber's kit|phb",
+            "shovel|phb",
+            {
+              "special": "a pair of thick gloves"
+            },
+            {
+              "special": "a cloak with a hood"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiency:",
+              "entry": "Two of the following: {@skill Perception}, {@skill Survival}, {@skill Stealth}, or {@skill Athletics}"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "Cook's utensils, climber's kit, a shovel, a pair of thick gloves, a cloak with a hood"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "Cook's utensils, one other set of artisan's tools"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Background",
+          "entries": [
+            "Not everyone left Drakkenheim after the meteor. Some stayed behind, searching the ruins for things they lost: friends and family, or just seeking out treasure and artefacts. You know what places in the city are the most dangerous, what paths are the best to take, and often have an idea of the fastest ways to travel. Despite the Haze, and dangers, you’ve managed to survive, but carry the weight of Drakkenheim’s madness with you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Makeshift Meals",
+          "entries": [
+            "You know how to purify food and rations found in the ruins. When you take a short rest, you prepare a meal for a number of creatures equal to your proficiency bonus. Creatures who consume the food regain hit points equal to your level. Once they do, they can’t regain hit points from another one of your meals until they finish a long rest."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Variant: Veteran of the Civil War",
+          "entries": [
+            "You survived the civil war that ravaged Westemar, either as a soldier or fleeing refugee. The war took something from you and changed you. It may be that you had to do things that went against your morals, or perhaps you lost friends and family in the bloodshed. Regardless, you walked away with scars that will not easily heal."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Treasure Seeker",
+      "source": "SCGD",
+      "edition": "classic",
+      "skillProficiencies": [
+        {
+          "investigation": true,
+          "choose": {
+            "from": [
+              "stealth",
+              "insight",
+              "perception"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "thieves' tools": true,
+          "cartographer's tools": true
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            "thieves' tools|phb",
+            {
+              "special": "a set of dark clothes with a hood and a face covering"
+            },
+            {
+              "special": "a signet ring of a fake lord"
+            },
+            {
+              "special": "a fake identification"
+            },
+            {
+              "special": "a set of weighted dice"
+            },
+            "playing card set|phb"
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies:",
+              "entry": "{@skill Investigation} and one choice from the following: {@skill Stealth}, {@skill Insight}, or {@skill Perception}"
+            },
+            {
+              "type": "item",
+              "name": "Equipment:",
+              "entry": "Thieves' tools, a set of dark clothes with a hood and a face covering, a signet ring of a fake lord, a fake identification, a set of weighted dice, and a deck of cards"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies:",
+              "entry": "Thieves' tools, cartographer's tools"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Background",
+          "entries": [
+            "Lost treasure and valuable relics brought you to Drakkenheim. Perhaps the prospect of earning more gold than you can spend in your lifetime is too tantalizing to pass up, or alternatively you may seek out relics for their historical or religious significance."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Feature: Detail-Oriented",
+          "entries": [
+            "You double your proficiency bonus when making any ability check to search the ruins of Drakkenheim."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Variant: Soldier of Fortune",
+          "entries": [
+            "Rather than seeking your fortune from finding treasure, you seek yours by hunting down the brigands, outlaws, and monsters that now hide in Drakkenheim. You often take up dangerous bounties and follow wanted posters as long as the price is right. Danger is second nature to you and the horrors of the city are nothing compared to the thrill of the hunt, and the coin it can gain you."
+          ]
+        }
+      ]
+    }
+  ]
+}
