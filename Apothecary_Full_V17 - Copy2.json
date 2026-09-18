@@ -1,0 +1,7181 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "SCGD",
+        "abbreviation": "SCGD",
+        "full": "Sebastian Crowe's Guide to Drakkenheim — Apothecary",
+        "version": "2.3.0",
+        "authors": [
+          "Private Homebrew"
+        ],
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "edition": "classic",
+    "dateAdded": 1788911290,
+    "dateLastModified": "2026-09-09",
+    "optionalFeatureTypes": {
+      "SCGD:ET": "Esoteric Theories"
+    },
+    "version": "2.3.1",
+    "dependencies": {
+      "spell": [
+        "PHB"
+      ]
+    }
+  },
+  "class": [
+    {
+      "name": "Apothecary",
+      "source": "SCGD",
+      "page": 134,
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "int",
+      "casterProgression": "pact",
+
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "preparedSpellsChange": "restLong",
+      "classSpells": [
+        "Acid Burn|SCGD",
+        "Acid Splash",
+        "Bacterial Barrage|SCGD",
+        "Chill Touch",
+        "Guidance",
+        "Light",
+        "Mending",
+        "Message",
+        "Poison Needle|SCGD",
+        "Poison Spray",
+        "Resistance",
+        "Shocking Grasp",
+        "Spare the Dying",
+        "Thaumaturgy",
+        "Acrid Orb|SCGD",
+        "Alarm",
+        "Comprehend Languages",
+        "Create or Destroy Water",
+        "Cure Wounds",
+        "Detect Evil and Good",
+        "Detect Magic",
+        "Detect Poison and Disease",
+        "Envenom|SCGD",
+        "False Life",
+        "Feather Fall",
+        "Floating Disk",
+        "Fog Cloud",
+        "Grease",
+        "Healing Word",
+        "Hideous Laughter",
+        "Identify",
+        "Illusory Script",
+        "Inflect|SCGD",
+        "Jump",
+        "Purify Food and Drink",
+        "Shield",
+        "Stream of Consumption|SCGD",
+        "Toxic Shield|SCGD",
+        "Unseen Servant",
+        "Acid Arrow",
+        "Aid",
+        "Biohazard|SCGD",
+        "Blindness/Deafness",
+        "Caustic Grip|SCGD",
+        "Enhance Ability",
+        "Enlarge/Reduce",
+        "Gentle Repose",
+        "Grasping Ghost|SCGD",
+        "Hold Person",
+        "Invigorate|SCGD",
+        "Lesser Restoration",
+        "Ocular Necrosis|SCGD",
+        "Protection from Poison",
+        "Ray of Enfeeblement",
+        "See Invisibility",
+        "Silence",
+        "Spider Climb",
+        "Web",
+        "Bestow Curse",
+        "Corrosive Blast|SCGD",
+        "Devil's Magic",
+        "Fear",
+        "Fetid Blade|SCGD",
+        "Gaseous Form",
+        "Glyph of Warding",
+        "Haste",
+        "Hypnotic Pattern",
+        "Magic Circle",
+        "Mass Healing Word",
+        "Pestilence|SCGD",
+        "Purge Contamination|SCGD",
+        "Protection from Energy",
+        "Remove Curse",
+        "Revivify",
+        "Sending",
+        "Slow",
+        "Speak with Dead",
+        "Stinking Cloud",
+        "Tranquilizing Toxin|SCGD",
+        "Vampiric Touch",
+        "Venomous Aura|SCGD",
+        "Black Tentacles",
+        "Blight",
+        "Blood Worm|SCGD",
+        "Corpse Explosion|SCGD",
+        "Corrupting Spores|SCGD",
+        "Death Ward",
+        "Freedom of Movement",
+        "Greater Restoration",
+        "Last Rites|SCGD",
+        "Poison Wave|SCGD",
+        "Polymorph",
+        "Stoneskin",
+        "Vitriol Ichor|SCGD",
+        "Acid Rain|SCGD",
+        "Antilife Shell",
+        "Cloudkill",
+        "Contact Other Plane",
+        "Greater Restoration",
+        "Hold Monster",
+        "Mass Cure Wounds",
+        "Nerve Gas|SCGD",
+        "Raise Dead",
+        "Scrying",
+        "Septic Shock|SCGD",
+        "Telepathic Bond",
+        "Toxic Barrage|SCGD",
+        "Chain Lightning",
+        "Circle of Death",
+        "Create Undead",
+        "Disintegrate",
+        "Eyebite",
+        "Flesh to Stone",
+        "Globe of Invulnerability",
+        "Harm",
+        "Heal",
+        "Mephitic Vapors|SCGD",
+        "True Seeing",
+        "Vile Necrosis|SCGD",
+        "Etherealness",
+        "Finger of Death",
+        "Forcecage",
+        "Miasma|SCGD",
+        "Plane Shift",
+        "Prismatic Spray",
+        "Grievous Wounds|SCGD",
+        "Regenerate",
+        "Resurrection",
+        "Antimagic Field",
+        "Antipathy/Sympathy",
+        "Breath of Nightshade|SCGD",
+        "Clone",
+        "Dominate Monster",
+        "Feeblemind",
+        "Mind Blank",
+        "Plague Wind|SCGD",
+        "Power Word Stun",
+        "Astral Projection",
+        "Foresight",
+        "Mass Heal",
+        "Pandemic|SCGD",
+        "Power Word Kill",
+        "Time Stop",
+        "Touch of Death|SCGD",
+        "True Polymorph",
+        "True Resurrection"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium"
+        ],
+        "weapons": [
+          "simple",
+          "shortsword",
+          "hand crossbow"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "investigation",
+                "medicine",
+                "nature",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ],
+        "tools": [
+          "Alchemist's supplies"
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light"
+          ],
+          "tools": [
+            "Alchemist's supplies"
+          ]
+        }
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item light crossbow|phb} and 20 bolts or (b) a {@item shortsword|phb} or other simple weapon",
+          "(a) a component pouch or (b) an arcane focus",
+          "(a) a scholar's pack or (b) a dungeoneer's pack",
+          "hide armor, any simple weapon, 2 daggers, and a healer's kit"
+        ],
+        "defaultData": [
+          {
+            "a": [
+              "light crossbow|phb",
+              "crossbow bolts (20)|phb"
+            ],
+            "b": [
+              "shortsword|phb"
+            ]
+          },
+          {
+            "a": [
+              "component pouch|phb"
+            ],
+            "b": [
+              {
+                "equipmentType": "focusSpellcastingArcane"
+              }
+            ]
+          },
+          {
+            "a": [
+              "scholar's pack|phb"
+            ],
+            "b": [
+              "dungeoneer's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              "hide armor|phb",
+              {
+                "equipmentType": "weaponSimple"
+              },
+              {
+                "item": "dagger|phb",
+                "quantity": 2
+              },
+              "healer's kit|phb"
+            ]
+          }
+        ]
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Proficiency Bonus",
+            "{@filter Cantrips Known|spells|level=0|class=Apothecary}",
+            "Spell Slots",
+            "Slot Level",
+            "Esoteric Theories",
+            "Greater Formula"
+          ],
+          "rows": [
+            [
+              "+2",
+              3,
+              1,
+              "1th",
+              0
+            ],
+            [
+              "+2",
+              3,
+              2,
+              "1th",
+              2
+            ],
+            [
+              "+2",
+              3,
+              2,
+              "2th",
+              2
+            ],
+            [
+              "+2",
+              4,
+              2,
+              "2th",
+              3
+            ],
+            [
+              "+3",
+              4,
+              3,
+              "3th",
+              3
+            ],
+            [
+              "+3",
+              4,
+              3,
+              "3th",
+              4
+            ],
+            [
+              "+3",
+              4,
+              3,
+              "4th",
+              5
+            ],
+            [
+              "+3",
+              4,
+              3,
+              "4th",
+              5
+            ],
+            [
+              "+4",
+              4,
+              4,
+              "5th",
+              6
+            ],
+            [
+              "+4",
+              5,
+              4,
+              "5th",
+              6
+            ],
+            [
+              "+4",
+              5,
+              4,
+              "5th",
+              7
+            ],
+            [
+              "+4",
+              5,
+              4,
+              "5th",
+              7
+            ],
+            [
+              "+5",
+              5,
+              5,
+              "5th",
+              8
+            ],
+            [
+              "+5",
+              5,
+              5,
+              "5th",
+              8
+            ],
+            [
+              "+5",
+              5,
+              5,
+              "5th",
+              9
+            ],
+            [
+              "+5",
+              5,
+              5,
+              "5th",
+              9
+            ],
+            [
+              "+6",
+              5,
+              6,
+              "5th",
+              9
+            ],
+            [
+              "+6",
+              5,
+              6,
+              "5th",
+              10
+            ],
+            [
+              "+6",
+              5,
+              6,
+              "5th",
+              10
+            ],
+            [
+              "+6",
+              5,
+              6,
+              "5th",
+              10
+            ]
+          ]
+        }
+      ],
+
+      
+
+
+      "classFeatures": [
+        "Apothecary Magic|Apothecary|SCGD|1",
+        {
+          "classFeature": "Occult Practice|Apothecary|SCGD|1",
+          "gainSubclassFeature": true
+        },
+        "Esoteric Theories|Apothecary|SCGD|2",
+        {
+          "classFeature": "Occult Practice Feature|Apothecary|SCGD|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Apothecary|SCGD|4",
+        {
+          "classFeature": "Occult Practice Feature|Apothecary|SCGD|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Apothecary|SCGD|8",
+        {
+          "classFeature": "Occult Practice Feature|Apothecary|SCGD|10",
+          "gainSubclassFeature": true
+        },
+        "Greater Formula|Apothecary|SCGD|11",
+        "Ability Score Improvement|Apothecary|SCGD|12",
+        "Greater Formula|Apothecary|SCGD|13",
+        {
+          "classFeature": "Occult Practice Feature|Apothecary|SCGD|14",
+          "gainSubclassFeature": true
+        },
+        "Greater Formula|Apothecary|SCGD|15",
+        "Ability Score Improvement|Apothecary|SCGD|16",
+        "Greater Formula|Apothecary|SCGD|17",
+        {
+          "classFeature": "Occult Practice Feature|Apothecary|SCGD|18",
+          "gainSubclassFeature": true
+        },
+        "Greater Formula|Apothecary|SCGD|19",
+        "Ability Score Improvement|Apothecary|SCGD|19",
+        "Greater Formula|Apothecary|SCGD|20",
+        "Miraculous Recovery|Apothecary|SCGD|20"
+      ],
+      "subclassTitle": "Occult Practice",
+      "optionalfeatureProgression": [
+        {
+          "name": "Esoteric Theories",
+          "featureType": [
+            "SCGD:ET"
+          ],
+          "progression": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8,
+            8,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10
+          ]
+        }
+      ],
+      
+
+      "spellsKnownProgressionFixedByLevel": {
+        "11": {"6": 1},
+        "13": {"7": 1},
+        "15": {"8": 1},
+        "17": {"9": 1},
+        "19": {"6": 1},
+        "20": {"7": 1}
+      }
+
+    }
+  ],
+
+  "monster": [
+    {
+      "name": "Corpswrought Creature",
+      "source": "SCGD",
+      "page": 134,
+
+      "summonedByClass": "Apothecary|SCGD",
+
+      "size": ["M"],
+      "type": "construct",
+      "alignment": ["U"],
+
+      "ac": [
+        {
+          "ac": 14
+        }
+      ],
+
+      "hp": {
+        "average": 5,
+        "formula": "5"
+      },
+
+      "speed": {
+        "walk": 30
+      },
+
+      "str": 18,
+      "dex": 10,
+      "con": 16,
+      "int": 8,
+      "wis": 12,
+      "cha": 8,
+
+      "save": {
+        "con": "+3 + PB",
+        "wis": "+1 + PB"
+      },
+
+      "skill": {
+        "ath": "+4 + PB"
+      },
+
+      "immune": [
+        "lightning",
+        "poison"
+      ],
+
+      "conditionImmune": [
+        "poisoned"
+      ],
+
+      "senses": [
+        "darkvision 60 ft.",
+        "passive Perception 11"
+      ],
+
+      "languages": [
+        "understands the languages of its creator but can't speak"
+      ],
+
+      "cr": "0",
+
+      "trait": [
+        {
+          "name": "Lightning Absorption",
+          "entries": [
+            "Whenever the corpswrought creature is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt."
+          ]
+        }
+      ],
+
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atk mw} {@hit 4 + PB} to hit, reach 5 ft., one target. {@h} {@damage 1d8 + 4} bludgeoning damage."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "classFeature": [
+    {
+      "name": "Apothecary Magic",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Your Apothecary spellcasting uses Intelligence. You prepare spells according to your Apothecary level and Intelligence modifier; ritual-tagged prepared spells can be cast as rituals."
+      ]
+    },
+    {
+      "name": "Occult Practice",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Choose an Occult Practice: Alienist, Chemist, Exorcist, Mutagenist, Pathogenist, or Reanimator."
+      ]
+    },
+    {
+      "name": "Esoteric Theories",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 2,
+      "entries": [
+        "Learn two Esoteric Theories. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ]
+    },
+    {
+      "name": "Occult Practice Feature",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain a feature from your chosen Occult Practice."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 4,
+      "entries": [
+        "Gain an Ability Score Improvement."
+      ]
+    },
+    {
+      "name": "Occult Practice Feature",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain a feature from your chosen Occult Practice."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 8,
+      "entries": [
+        "Gain an Ability Score Improvement."
+      ]
+    },
+    {
+      "name": "Occult Practice Feature",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Gain a feature from your chosen Occult Practice."
+      ]
+    },
+
+    {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 11,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=6|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+        {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 13,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=7|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+        {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 15,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=8|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+        {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 17,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=9|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+        {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 19,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=6|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+        {
+      "name": "Greater Formula",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 20,
+      "entries": [
+        "Learn one Greater Formula. The class table shows additional theories gained at later levels; when gaining an Apothecary level, you can replace a theory with another one available to you."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=7|class=Apothecary|source=SCGD",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    
+    {
+      "name": "Ability Score Improvement",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 12,
+      "entries": [
+        "Gain an Ability Score Improvement."
+      ]
+    },
+    
+    {
+      "name": "Occult Practice Feature",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Gain a feature from your chosen Occult Practice."
+      ]
+    },
+    
+    {
+      "name": "Ability Score Improvement",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 16,
+      "entries": [
+        "Gain an Ability Score Improvement."
+      ]
+    },
+    
+    {
+      "name": "Occult Practice Feature",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Gain a feature from your chosen Occult Practice."
+      ]
+    },
+
+
+    {
+      "name": "Ability Score Improvement",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 19,
+      "entries": [
+        "Gain an Ability Score Improvement."
+      ]
+    },
+    
+
+    {
+      "name": "Miraculous Recovery",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "level": 20,
+      "entries": [
+        "After 5 minutes of channeling with a healer's kit that has at least one use, up to your Intelligence modifier creatures regain the benefits of a long rest. A creature can benefit only once every 24 hours."
+      ]
+    }
+    
+  ],
+  "subclass": [
+    {
+      "name": "Alienist",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "known": {
+            "3": [
+              "Charm Person",
+              "Tasha's Hideous Laughter"
+            ],
+            "5": [
+              "Detect Thoughts",
+              "Suggestion"
+            ],
+            "9": [
+              "Hypnotic Pattern",
+              "Major Image"
+            ],
+            "13": [
+              "Arcane Eye",
+              "Dimension Door"
+            ],
+            "17": [
+              "Animate Objects",
+              "Modify Memory"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "Charm Person",
+        "Tasha's Hideous Laughter",
+        "Detect Thoughts",
+        "Suggestion",
+        "Hypnotic Pattern",
+        "Major Image",
+        "Arcane Eye",
+        "Dimension Door",
+        "Animate Objects",
+        "Modify Memory"
+      ],
+      "subclassFeatures": [
+        "Advanced Psychology|Apothecary|SCGD|Alienist|SCGD|1",
+        "Mental Influence|Apothecary|SCGD|Alienist|SCGD|3",
+        "Metaphysical Tether|Apothecary|SCGD|Alienist|SCGD|3",
+        "Force Manipulation|Apothecary|SCGD|Alienist|SCGD|6",
+        "Mental Magic|Apothecary|SCGD|Alienist|SCGD|10",
+        "Self-Diagnosis|Apothecary|SCGD|Alienist|SCGD|14",
+        "Impenetrable Mind|Apothecary|SCGD|Alienist|SCGD|18"
+      ]
+    },
+    {
+      "name": "Chemist",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "known": {
+            "3": [
+              "Burning Hands",
+              "Grease"
+            ],
+            "5": [
+              "Acid Arrow",
+              "Flaming Sphere"
+            ],
+            "9": [
+              "Fireball",
+              "Stinking Cloud"
+            ],
+            "13": [
+              "Ice Storm",
+              "Wall of Fire"
+            ],
+            "17": [
+              "Cloudkill",
+              "Cone of Cold"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "Burning Hands",
+        "Grease",
+        "Acid Arrow",
+        "Flaming Sphere",
+        "Fireball",
+        "Stinking Cloud",
+        "Ice Storm",
+        "Wall of Fire",
+        "Cloudkill",
+        "Cone of Cold"
+      ],
+      "subclassFeatures": [
+        "Chemical Compound|Apothecary|SCGD|Chemist|SCGD|1",
+        "Precise Application|Apothecary|SCGD|Chemist|SCGD|3",
+        "Chain Reaction|Apothecary|SCGD|Chemist|SCGD|6",
+        "Chemical Conditioning|Apothecary|SCGD|Chemist|SCGD|6",
+        "Bottled Spells|Apothecary|SCGD|Chemist|SCGD|10",
+        "Elemental Adjustment|Apothecary|SCGD|Chemist|SCGD|14",
+        "Chemical Cataclysm|Apothecary|SCGD|Chemist|SCGD|18"
+      ]
+    },
+    {
+      "name": "Exorcist",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "prepared": {
+            "3": [
+              "Bless",
+              "Protection from Evil and Good"
+            ],
+            "5": [
+              "Spiritual Weapon",
+              "Zone of Truth"
+            ],
+            "9": [
+              "Counterspell",
+              "Spirit Guardians"
+            ],
+            "13": [
+              "Banishment",
+              "Last Rites|SCGD"
+            ],
+            "17": [
+              "Dispel Evil and Good",
+              "Flame Strike"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "Bless",
+        "Protection from Evil and Good",
+        "Spiritual Weapon",
+        "Zone of Truth",
+        "Counterspell",
+        "Spirit Guardians",
+        "Banishment",
+        "Last Rites|SCGD",
+        "Dispel Evil and Good",
+        "Flame Strike"
+      ],
+      "subclassFeatures": [
+        "Spiritual Study|Apothecary|SCGD|Exorcist|SCGD|1",
+        "Exorcism|Apothecary|SCGD|Exorcist|SCGD|3",
+        "Purge Corruption|Apothecary|SCGD|Exorcist|SCGD|3",
+        "Sacred Vessel|Apothecary|SCGD|Exorcist|SCGD|6",
+        "Allegation|Apothecary|SCGD|Exorcist|SCGD|10",
+        "Empowered Healing|Apothecary|SCGD|Exorcist|SCGD|14",
+        "Devout Witness|Apothecary|SCGD|Exorcist|SCGD|18"
+      ]
+    },
+    {
+      "name": "Mutagenist",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "known": {
+            "3": [
+              "Jump",
+              "Touch of the Reaper|SCGD"
+            ],
+            "5": [
+              "Alter Self",
+              "Enhance Ability"
+            ],
+            "9": [
+              "Haste",
+              "Water Breathing"
+            ],
+            "13": [
+              "Polymorph",
+              "Stoneskin"
+            ],
+            "17": [
+              "Reincarnate",
+              "Septic Shock|SCGD"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "Jump",
+        "Touch of the Reaper|SCGD",
+        "Alter Self",
+        "Enhance Ability",
+        "Haste",
+        "Water Breathing",
+        "Polymorph",
+        "Stoneskin",
+        "Reincarnate",
+        "Septic Shock|SCGD"
+      ],
+      "subclassFeatures": [
+        "Natural Philosophy|Apothecary|SCGD|Mutagenist|SCGD|1",
+        "Transmogrifying Elixir|Apothecary|SCGD|Mutagenist|SCGD|3",
+        "Extra Attack|Apothecary|SCGD|Mutagenist|SCGD|6",
+        "Potent Biology|Apothecary|SCGD|Mutagenist|SCGD|6",
+        "Adaptive Genetics|Apothecary|SCGD|Mutagenist|SCGD|10",
+        "Unnatural Evolution|Apothecary|SCGD|Mutagenist|SCGD|14",
+        "The New Flesh|Apothecary|SCGD|Mutagenist|SCGD|18"
+      ]
+    },
+    {
+      "name": "Pathogenist",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "known": {
+            "3": [
+              "Inflict Wounds"
+            ],
+            "5": [
+              "Blindness/Deafness"
+            ],
+            "9": [
+              "Pestilence|SCGD",
+              "Venomous Aura|SCGD"
+            ],
+            "13": [
+              "Blight",
+              "Blood Worm|SCGD"
+            ],
+            "17": [
+              "Contagion",
+              "Insect Plague"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "Inflict Wounds",
+        "Blindness/Deafness",
+        "Pestilence|SCGD",
+        "Venomous Aura|SCGD",
+        "Blight",
+        "Blood Worm|SCGD",
+        "Contagion",
+        "Insect Plague"
+      ],
+      "subclassFeatures": [
+        "Plague Proficiency|Apothecary|SCGD|Pathogenist|SCGD|1",
+        "Pernicious Pathogens|Apothecary|SCGD|Pathogenist|SCGD|3",
+        "Mutant Strain|Apothecary|SCGD|Pathogenist|SCGD|3",
+        "Breakthrough Infection|Apothecary|SCGD|Pathogenist|SCGD|6",
+        "Outbreak|Apothecary|SCGD|Pathogenist|SCGD|6",
+        "Insidious Incubation|Apothecary|SCGD|Pathogenist|SCGD|10",
+        "Immunocompromised|Apothecary|SCGD|Pathogenist|SCGD|14",
+        "Rapid Evolution|Apothecary|SCGD|Pathogenist|SCGD|18"
+      ]
+    },
+    {
+      "name": "Reanimator",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "page": 134,
+      "additionalSpells": [
+        {
+          "name": "Occult Practice Spells",
+          "known": {
+            "3": [
+              "False Life",
+              "Inflict Wounds"
+            ],
+            "5": [
+              "Gentle Repose",
+              "Invigorate|SCGD"
+            ],
+            "9": [
+              "Lightning Bolt",
+              "Revivify"
+            ],
+            "13": [
+              "Death Ward",
+              "Corpse Explosion|SCGD"
+            ],
+            "17": [
+              "Raise Dead",
+              "Nerve Gas|SCGD"
+            ]
+          }
+        }
+      ],
+      "subclassSpells": [
+        "False Life",
+        "Inflict Wounds",
+        "Gentle Repose",
+        "Invigorate|SCGD",
+        "Lightning Bolt",
+        "Revivify",
+        "Death Ward",
+        "Corpse Explosion|SCGD",
+        "Raise Dead",
+        "Nerve Gas|SCGD"
+      ],
+      "subclassFeatures": [
+        "Spark of Life|Apothecary|SCGD|Reanimator|SCGD|1",
+        "Corpswrought Creature|Apothecary|SCGD|Reanimator|SCGD|3",
+        "Bodyguard|Apothecary|SCGD|Reanimator|SCGD|6",
+        "Reanimated Head|Apothecary|SCGD|Reanimator|SCGD|6",
+        "Behold My Creation|Apothecary|SCGD|Reanimator|SCGD|10",
+        "Berserk Fury|Apothecary|SCGD|Reanimator|SCGD|14",
+        "I Can't Stop the Monster I Created|Apothecary|SCGD|Reanimator|SCGD|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Advanced Psychology",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Gain eldritch blast and Arcana proficiency, or an alternative skill/tool proficiency if already proficient."
+      ]
+    },
+    {
+      "name": "Mental Influence",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain Psychic Points and the Alienist's mental options; exact point expenditure mechanics will be filled from the remaining reference text."
+      ]
+    },
+    {
+      "name": "Metaphysical Tether",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain the Alienist's psychic-link feature."
+      ]
+    },
+    {
+      "name": "Force Manipulation",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain the Alienist's gravity/force-manipulation feature."
+      ]
+    },
+    {
+      "name": "Mental Magic",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Gain the Alienist's Mental Magic options."
+      ]
+    },
+    {
+      "name": "Self-Diagnosis",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Gain the Alienist's Psychic Point recovery feature."
+      ]
+    },
+    {
+      "name": "Impenetrable Mind",
+      "shortName": "Alienist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Alienist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Gain the Alienist's mental defenses against psychic effects, charm, fear, and control."
+      ]
+    },
+    {
+      "name": "Chemical Compound",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Gain alchemist's supplies proficiency, fire bolt, and one wizard cantrip."
+      ]
+    },
+    {
+      "name": "Precise Application",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Choose an acid, cold, fire, lightning, or poison damage application mode."
+      ]
+    },
+    {
+      "name": "Chain Reaction",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain the Chemist's cantrip chain-reaction feature."
+      ]
+    },
+    {
+      "name": "Chemical Conditioning",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain resistance to acid, cold, fire, lightning, and poison damage."
+      ]
+    },
+    {
+      "name": "Bottled Spells",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Gain the ability to store a Chemist spell."
+      ]
+    },
+    {
+      "name": "Elemental Adjustment",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Gain the ability to change listed damage types."
+      ]
+    },
+    {
+      "name": "Chemical Cataclysm",
+      "shortName": "Chemist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Chemist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Gain the Chemist capstone feature."
+      ]
+    },
+    {
+      "name": "Spiritual Study",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "You gain proficiency in heavy armor and the Religion skill. If you already have this proficiency, you gain proficiency with another skill of your choice.",
+        "You can use a holy symbol as an arcane focus for your apothecary spells and you gain a cantrip of your choice from the cleric spell list. This cantrip counts as an apothecary cantrip for you."
+      ],
+      "skillProficiencies": [
+        {
+          "religion": true
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": "int",
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=cleric",
+                "count": 1,
+                "entry": "a cleric cantrip",
+                "entrySummary": "Cleric Cantrip"
+              }
+            ]
+          }
+        }
+      ],
+      "foundryEffects": [
+        {
+          "name": "Spiritual Study — Heavy Armor",
+          "changes": [
+            {
+              "key": "system.traits.armorProf.value",
+              "mode": "ADD",
+              "value": "heavy"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Exorcism",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+        "entries": [
+          "At 3rd level you gain the ability to imbue divine energy through your holy symbol to expel evil entities in the area, or purge their harmful effects from your allies.",
+          "When you use this feature, you choose which effect to create. You can use this feature a number of times equal to half your proficiency bonus rounded down, and you regain all expended uses when you finish a short or long rest.",
+          "If an Exorcism effect requires a saving throw, the DC equals your Apothecary spell save DC.",
+          "Starting at 5th level, when an undead or fiend fails its saving throw against your Expel Evil feature, that creature suffers 4d8 radiant damage.",
+          {
+            "type": "entries",
+            "name": "Expel Evil",
+            "entries": [
+              "As an action, you present your holy symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw.",
+              "If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+              "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Purge Corruption",
+            "entries": [
+              "You touch a creature or item and can end either one condition afflicting it. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned.",
+              "Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession.",
+              "If possessed, the creature possessing it is shunted out of its host to an unoccupied space within 5 feet and takes psychic damage equal to 2d8 + your Apothecary level."
+            ]
+          }
+        ]
+    },
+    {
+      "name": "Purge Corruption",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "You can use the Purge Corruption effect of your Exorcism feature to touch a creature or item and end one of the following conditions: blinded, charmed, deafened, frightened, paralyzed, or poisoned."
+      ]
+    },
+    {
+      "name": "Sacred Vessel",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "You are immune to the frightened condition, and cannot be possessed or cursed. You also have advantage on saving throws against being charmed."
+      ], 
+      "foundryEffects": [
+        {
+          "name": "Sacred Vessel",
+          "changes": [
+            {
+              "key": "system.traits.ci.value",
+              "mode": "ADD",
+              "value": "frightened"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Allegation",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "As a reaction when a hostile creature you can see targets an ally with an attack, spell, or other effect, you can expend an Apothecary spell slot to force it to make a Charisma saving throw against your spell save DC. On a failure, the action they were attempting fails and resources used are wasted."
+      ],
+      "foundryActivities": [
+        {
+          "type": "utility",
+          "name": "Negation",
+          "activation": {
+            "type": "reaction",
+            "value": 1,
+            "override": false
+          },
+          "description": {
+            "chatFlavor": "When a hostile creature targets an ally with an attack, spell, or other effect, force a Charisma save. On a failure, the action fails and its resources are wasted."
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "spellSlot"
+              }
+            ],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "target": {
+            "prompt": true,
+            "template": {
+              "contiguous": false,
+              "units": "ft"
+            },
+            "affects": {
+              "count": "1",
+              "type": "creature"
+            },
+            "override": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Empowered Healing",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains temporary hit points equal to your Apothecary level."
+      ]
+    },
+    {
+      "name": "Devout Witness",
+      "shortName": "Exorcist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Exorcist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities.",
+        "Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional 4d8 radiant damage.",
+        "Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 temporary hit points."
+      ]
+    },
+    {
+      "name": "Natural Philosophy",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Gain alchemist's supplies and the additional proficiencies/languages specified by the feature."
+      ]
+    },
+    {
+      "name": "Transmogrifying Elixir",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain Transmogrifying Elixir."
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "You can attack twice, instead of once, when taking the Attack action."
+      ]
+    },
+    {
+      "name": "Potent Biology",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain Potent Biology."
+      ]
+    },
+    {
+      "name": "Adaptive Genetics",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Gain Adaptive Genetics."
+      ]
+    },
+    {
+      "name": "Unnatural Evolution",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Gain Unnatural Evolution."
+      ]
+    },
+    {
+      "name": "The New Flesh",
+      "shortName": "Mutagenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Mutagenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Gain The New Flesh."
+      ]
+    },
+    {
+      "name": "Plague Proficiency",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Gain chill touch, herbalism kit proficiency, and another artisan-tool proficiency."
+      ]
+    },
+    {
+      "name": "Pernicious Pathogens",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain Pernicious Pathogens."
+      ]
+    },
+    {
+      "name": "Mutant Strain",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "Gain Mutant Strain options."
+      ]
+    },
+    {
+      "name": "Breakthrough Infection",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain Breakthrough Infection."
+      ]
+    },
+    {
+      "name": "Outbreak",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "Gain Outbreak."
+      ]
+    },
+    {
+      "name": "Insidious Incubation",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Gain Insidious Incubation."
+      ]
+    },
+    {
+      "name": "Immunocompromised",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "Gain Immunocompromised."
+      ]
+    },
+    {
+      "name": "Rapid Evolution",
+      "shortName": "Pathogenist",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Pathogenist",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Gain Rapid Evolution."
+      ]
+    },
+    {
+      "name": "Spark of Life",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 1,
+      "entries": [
+        "Gain {@spell shocking grasp} and {@spell spare the dying}."
+      ],
+
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              "shocking grasp#c",
+              "spare the dying#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Corpswrought Creature",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 3,
+      "entries": [
+        "You have constructed a companion from scavenged body parts and brought it to life with your occult magic: a corpswrought creature. The creature is friendly to you and your companions, and it obeys your commands.",
+        "In combat, the creature shares your initiative count, but takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action.",
+        "If your corpswrought creature has died within the last hour, you can use your healer's kit as an action to revive it, provided you are within 5 feet of it and you expend an apothecary spell slot. The corpswrought companion returns to life after 1 minute with all its hit points restored.",
+        "At the end of a long rest, you can create a new corpswrought creature if you have your healer's kit with you and access to suitable materials. If you already have a corpswrought creature from this feature, the first one immediately perishes. The creature also perishes if you die."
+      ],
+      "foundryActivities": [
+        {
+          "_id": "CorpSummonRean01",
+            "type": "summon",
+            "name": "Create Corpswrought Creature",
+
+            "activation": {
+              "type": "special"
+            },
+
+            "consumption": {
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false,
+              "targets": []
+            },
+
+            "description": {
+              "chatFlavor": "Create your Corpswrought Creature."
+            },
+
+            "duration": {
+              "value": null,
+              "units": null,
+              "special": null,
+              "concentration": false,
+              "override": false
+            },
+
+            "effects": [
+              {
+                "_id": "CorpBehold10Eff1",
+                "level": {
+                  "min": 10
+                }
+              },
+              {
+                "_id": "CorpStopMon18Eff",
+                "level": {
+                  "min": 18
+                }
+              }
+            ],
+
+            "range": {
+              "value": null,
+              "units": null,
+              "special": null,
+              "override": false
+            },
+
+            "target": {
+              "template": {},
+              "affects": {},
+              "override": false,
+              "prompt": false
+            },
+
+            "uses": {
+              "spent": 0,
+              "max": null,
+              "recovery": []
+            },
+
+            "visibility": {
+              "identifier": "apothecary"
+            },
+
+            "bonuses": {
+              "ac": "@attributes.prof",
+              "hd": "@classes.apothecary.levels",
+              "hp": "5 * @classes.apothecary.levels",
+              "attackDamage": "",
+              "saveDamage": "",
+              "healing": ""
+            },
+
+            "match": {
+              "ability": "str",
+              "attacks": true,
+              "disposition": true,
+              "proficiency": true,
+              "saves": false
+            },
+
+            "summon": {
+              "mode": "",
+              "prompt": true
+            },
+
+            "profiles": [
+              {
+                "_id": "CrpsPrflRean0001",
+                "count": "1",
+                "name": "Corpswrought Creature",
+                "uuid": "Compendium.plutonium-faux-id--7b22746167223a226372656174757265222c2274657874223a22436f72707377726f756768742043726561747572657c53434744227d.custom.Actor.0000000000000000"
+              }
+            ]
+        }
+      ],
+      "foundryEffects": [
+        {
+          "foundryId": "CorpBehold10Eff1",
+          "name": "Behold My Creation",
+          "changes": [
+            {
+              "key": "system.traits.size",
+              "mode": "OVERRIDE",
+              "value": "lg"
+            },
+            {
+              "key": "system.attributes.movement.walk",
+              "mode": "OVERRIDE",
+              "value": "40"
+            }
+          ],
+          "transfer": false
+        },
+        {
+          "foundryId": "CorpStopMon18Eff",
+          "name": "I Can't Stop the Monster I Created",
+          "changes": [
+            {
+              "key": "system.traits.size",
+              "mode": "OVERRIDE",
+              "value": "hu"
+            },
+            {
+              "key": "system.attributes.movement.walk",
+              "mode": "OVERRIDE",
+              "value": "50"
+            }
+          ],
+          "transfer": false
+        }
+      ]
+    },
+    {
+      "name": "Bodyguard",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+      "entries": [
+        "When a creature within 5 feet of your corpsewrought creature makes an attack against you, it can use its reaction to make a melee weapon attack against the attacking creature. In addition, your corpsewrought creature's slam attack counts as magical for the purpose of ivercoming resistance and immunity to nonmagical attacks and damage.",
+        "In addition you can cast {@spell animate dead} once using an Apothecary spell slot. Once you do, you can't cast the spell again until you finish a long rest."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              "animate dead"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reanimated Head",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 6,
+       "entries": [
+          "You have reanimated the head of a dead humanoid creature which now serves you in your studies. You may use the head as a spellcasting focus. The head speaks Common and one other language of your choice.",
+          "Whenever you make an Intelligence ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10. Additionally, you gain proficiency in the Arcana and Investigation skills.",
+          "You can use the head to cast {@spell speak with dead} without expending a spell slot. Once you use this feature, you can't do so again until you finish a short or long rest."
+        ],
+        "skillProficiencies": [
+          {
+            "arcana": true,
+            "investigation": true
+          }
+        ]
+    },
+    {
+      "name": "Behold My Creation",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 10,
+      "entries": [
+        "Your corpswrought creature's size increases to Large, and its speed increases to 40 feet.",
+        "When your corpswrought creature hits a creature with a melee attack, it can immediately make a grapple attempt against the target. The DC to escape this grapple is equal to 8 + the corpswrought creature's Strength modifier (+4) + your proficiency bonus."
+      ]
+    },
+    {
+      "name": "Berserk Fury",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 14,
+      "entries": [
+        "When you command your corpswrought creature to take the Attack action, the creature can make two attacks."
+      ]
+    },
+    {
+      "name": "I Can't Stop the Monster I Created",
+      "shortName": "Reanimator",
+      "source": "SCGD",
+      "className": "Apothecary",
+      "classSource": "SCGD",
+      "subclassShortName": "Reanimator",
+      "subclassSource": "SCGD",
+      "page": 134,
+      "level": 18,
+      "entries": [
+        "Your corpswrought creature increases in size to Huge, gains a reach of 10 feet, and its speed increases to 50 feet. Its slam attack deals an additional {@damage 1d8} bludgeoning damage.",
+        "Additionally, the weight your corpswrought creature can push or lift is doubled."
+      ]
+    }
+  ],
+  "foundrySpell": [
+  {
+    "name": "Caustic Grip",
+    "source": "SCGD",
+    "subEntities": {
+      "item": [
+        {
+          "name": "Acidic Grip",
+          "source": "SCGD",
+          "page": 186,
+          "foundryType": "equipment",
+          "entries": [
+            "As an action, make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 4d4 acid damage."
+          ],
+          "foundryActivities": [
+            {
+              "_id": "AcidGripAtk01X9Q",
+              "type": "attack",
+              "name": "Acidic Grip",
+              "activation": {
+                "type": "action",
+                "value": null,
+                "condition": null,
+                "override": false
+              },
+              "consumption": {
+                "scaling": {
+                  "allowed": false,
+                  "max": ""
+                },
+                "spellSlot": false,
+                "targets": []
+              },
+              "description": {
+                "chatFlavor": ""
+              },
+              "duration": {
+                "value": null,
+                "units": "inst",
+                "special": null,
+                "concentration": false,
+                "override": false
+              },
+              "effects": [],
+              "range": {
+                "value": "5",
+                "units": "ft",
+                "special": null,
+                "override": false
+              },
+              "target": {
+                "template": {
+                  "count": null,
+                  "contiguous": false,
+                  "type": null,
+                  "size": null,
+                  "width": null,
+                  "height": null,
+                  "units": "ft"
+                },
+                "affects": {
+                  "count": 1,
+                  "type": "creature",
+                  "choice": false,
+                  "special": null
+                },
+                "override": false,
+                "prompt": true
+              },
+              "uses": {
+                "spent": 0,
+                "max": null,
+                "recovery": []
+              },
+              "attack": {
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "spell"
+                },
+                "ability": "int",
+                "bonus": ""
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": false,
+                "parts": [
+                  {
+                    "number": 4,
+                    "denomination": 4,
+                    "bonus": "",
+                    "types": [
+                      "acid"
+                    ],
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+],
+  "spell": [
+    {
+      "name": "Acid Burn",
+      "source": "SCGD",
+      "page": 186,
+      "level": 0,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "feet",
+          "amount": 15
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You magically produce a spray of acidic formula in a 15-foot cone in front of you. All creatures in the cone must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage",
+        "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+      ],
+      "scalingLevelDice": {
+		    "label": "acid damage",
+		    "scaling": {
+		    	"1": "1d6",
+		    	"5": "2d6",
+		    	"11": "3d6",
+		    	"17": "4d6"
+		  }
+	  },
+      "damageInflict": [
+        "acid"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "areaTags": [
+        "N"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "miscTags": [
+        "OBJ",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Bacterial Barrage",
+      "source": "SCGD",
+      "page": 186,
+      "level": 0,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You attack a creature in range with a quick spreading infection that takes advantage of existing conditions. Make a ranged spell attack against a target, on a hit the infection does {@damage 1d8} necrotic damage to the target. If the target is suffering from the {@condition Poisoned} condition or a disease, it instead takes {@damage 1d12} necrotik damage.",
+        "The spell's damage increases by one die when you reach 5th level ({@dice 2d8} or {@dice 2d12}), 11th level ({@dice 3d8} or {@dice 3d12}), and 17th level ({@dice 4d8} or {@dice 4d12})."
+      ],
+
+      "scalingLevelDice": [
+		  {
+			  "label": "necrotic damage",
+			  "scaling": {
+				  "1": "1d8",
+				  "5": "2d8",
+				  "11": "3d8",
+				  "17": "4d8"
+			  }
+		  },
+		  {
+			  "label": "necrotic damage to {@condition Poisoned} or affected by Disease",
+			  "scaling": {
+				  "1": "1d12",
+				  "5": "2d12",
+				  "11": "3d12",
+				  "17": "4d12"
+			  }
+		  }
+	  ],
+      
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Poison Needle",
+      "source": "SCGD",
+      "page": 186,
+      "level": 0,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+
+    "entries": [
+        "You launch a conjured dart coated with lethal poison at a creature. Make a ranged spell attack against a creature you can see within range. On a hit, the target takes {@damage 1d10} poison damage.",
+        "If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way.",
+        "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}) and 17th level ({@dice 4d10})."
+      ],
+
+      "scalingLevelDice": {
+		    "label": "poison damage",
+		    "scaling": {
+		    	"1": "1d10",
+		    	"5": "2d10",
+		    	"11": "3d10",
+		    	"17": "4d10"
+		  }
+	  },
+
+    
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrB",
+      "name": "Poisoned",
+      "description": "The creature is poisoned for 1 hour.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "hours"
+      },
+      "transfer": false
+    },
+    {
+      "_id": "ParTst8kQ2Lm7XrB",
+      "name": "Paralyzed",
+      "description": "While the creature is poisoned it is paralyzed.",
+      "statuses": ["paralyzed"],
+      "duration": {
+        "value": 1,
+        "units": "hours"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "effects": [
+        {
+          "foundryId": "PsnTst8kQ2Lm7XrB"
+        },
+        {
+          "foundryId": "ParTst8kQ2Lm7XrB"
+        }
+      ]
+    }
+  },
+
+      "components": {
+        "v": true,
+        "s": true
+      },
+
+      
+      "conditionInflict": [
+        "paralyzed",
+        "poisoned"
+        ]
+    },
+
+
+
+
+
+    {
+      "name": "Acrid Orb",
+      "source": "SCGD",
+      "page": 186,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a vial of stoamch acid and a pinch of sulfate"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You create an orb of acid gel and fling it at once creature within range. Make a ranged spell attack against the target. On a hit the target takes {@damage 1d12+1} acid damage, Whether the attack hits or misses the orb explodes. The target and each creature within 5-foot cube of it must succeed on a Dexterity saving throw or take {@damage 2d6} acid damage."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the exploding acid damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+          ]
+        }
+      ],
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Envenom",
+      "source": "SCGD",
+      "page": 186,
+      "level": 1,
+      "school": "C",
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a vial of basic poison"
+      },
+      "time": [
+        {
+          "number" : 1,
+          "unit" : "action"
+        }
+      ],
+
+      "duration": [
+        {
+          "type": "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+
+      "entries": [
+        "Choose a creature you can see within range to inflict with a magical poison. The target takes {@damage 2d4} poison damage and must make a Constitution saving throw. On a failed saving throw, it becomes {@condition Poisoned} for the spell's duration.",
+        "While {@condition Poisoned} in this way, the target must make a Constitution saving throw at the end of each of its turns. It takes {@damage 2d4} poison damage on a failed saving throw. On a success, the spell ends on the target.",
+        "A lesser restoration on the target ends this spell early"
+      ],
+
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "If you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each level above 1st."
+        ]
+      }
+    ],
+
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrB",
+      "name": "Poisoned",
+      "description": "The creature is poisoned for 1 minute, and takes 2d4 poison damage every turn until the spell ends or it succeeds a Constitution saving throw.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrB"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+
+{
+      "name": "Infect",
+      "source": "SCGD",
+      "page": 186,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a petri dish"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You inflict a creature you can see within range with a magical disease. At the start of each of the target's turns, it must make a Constitution saving throw. The creature takes  {@damage 1d12} necrotic damage on a failed saving throw, or half as much on a successful one. If a target succeeds on three of these saves, the spell ends.",
+        "A lesser restoration spell cast on the target ends this spell early."
+      ],
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 1d12|1,3,5,7,9|1d12}"
+        ]
+      }
+    ],
+
+    "foundryEffects": [
+    {
+      "_id": "DisTst8kQ2Lm7XrA",
+      "name": "Magical Disease",
+      "description": "At the start of each of the creature's turns, it must makes a Constitution saving throw. THe creature takes 1d12 necrotic damage on a failed save or half on a successful one. The effet ends if the target succeeds three saving throws.",
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "DisTst8kQ2Lm7XrA"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCT"
+      ]
+    },
+
+
+    {
+      "name": "Stream of Consumption",
+      "source": "SCGD",
+      "page": 186,
+      "level": 1,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "For the spell's duration, your tongue becomes an elongated tether of necrotic green energy you can use to drink the vitality of other creatures. One creature of your choice within 60 feet of you that you can see must make a Constitution saving throw. On a failed save, the target gains 1 level of {@condition exhaustion}, and you regain hit points equal to {@dice 1d4} + your spellcasting ability modifier",
+        "On each of your turns until the spell ends, you can use your action to target the same creature or a different one, but can't target a creature again if it has succeeded on a saving throw against this casting of stream of consumption."
+      ],
+
+"foundryEffects": [
+    {
+      "_id": "ExhTst8kQ2Lm7XrA",
+      "name": "Exhaustion",
+      "description": "The creature suffers one level of exhasution.",
+      "statuses": ["exhaustion"],
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "ExhTst8kQ2Lm7XrA"
+        }
+      ]
+    }
+  },
+
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCT"
+      ]
+    },
+    {
+      "name": "Toxic Shield",
+      "source": "SCGD",
+      "page": 186,
+      "level": 1,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a drop of dwarven blood"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You gain resistance to poison damage and advantage on saves against being poisoned for the duration. In addition, whenever a creature within 5 feet of you hits you with melee attack, the shield sprays them with poison, dealing {@damage 1d8} poison damage to the attacker."
+      ],
+
+            "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the poison damage increases by {@scaledamage 1d8|1,3,5,7,9|1d8} for each slot level above 1st."
+          ]
+        }
+      ],
+
+    "foundryEffects": [
+    {
+      "_id": "ResTst8kQ2Lm7XrA",
+      "name": "Poison Resistance",
+      "description": "The creature has resistnace to poison while the spell is active.",
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "changes": [
+      {
+        "key": "system.traits.dr.value",
+        "mode": "ADD",
+        "value": "poison"
+      }
+    ],
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "allActivities": {
+      "effects": [
+        {
+          "_id": "ResTst8kQ2Lm7XrA"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ]
+    },
+
+
+
+
+
+    {
+      "name": "Biohazard",
+      "source": "SCGD",
+      "page": 186,
+      "level": 2,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : false
+        }
+      ],
+      "entries": [
+        "You coat a 15-foot cube with toxic sludge for the spell's duration. The area is difficult terrain and filled with dangerous fumes. A creature that enters the area or starts its turn there must make a Constitution saving throw. On a failed saving throw, the creature takes {@damage 1d8} poison damage and is {@condition Poisoned} until the start of its next turn. Creatures are affected even if they hold their breath or don't need to breathe."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d8|2-9|1d8} for each slot level above 2nd."
+          ]
+        }
+      ],
+
+      
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrC",
+      "name": "Poisoned",
+      "description": "The creature is poisoned until the end of its next turn.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrC"
+        }
+      ]
+    }
+  },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "areaTags": [
+        "C"
+      ],
+      "miscTags": [
+        "DFT"
+      ]
+    },
+    {
+      "name": "Caustic Grip",
+      "source": "SCGD",
+      "page": 186,
+      "level": 2,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "For the spell's duration, your hand secretes sticky burning acid which you can use to hold a creature in a painful clutch. When you cast this spell, and as an action on your turn until the spell ends, you can make a melee spell attack against one creature within 5 feet of you. On a hit, you deal {@damage 4d4} acid damage to the target, and the creature is {@condition restrained} in your acidic grip until the end of your next turn. You can attack the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no logner affected by the spell.",
+        "A creature {@condition restrained} by your grip can use its action to make a Strenght check against you spell save DC. If it succeeds, it is no longer {@condition restrained}. Each time a creature ends its turn {@condition restrained}. Each time a creature ends its turn {@condition restrained} by this spell it takes and additional {@damage 4d4} acid damage."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 2d4|2-9|2d4} for each slot level above 2nd."
+          ]
+        }
+      ],
+  
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Grasping Ghost",
+      "source": "SCGD",
+      "page": 186,
+      "level": 2,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "s": true,
+        "m" : "a finger bone and a scrap of fabric"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "A flock of floating spectral hands appear and grasp a target you can see within range. The target must succeed on a Strength saving throw. A target takes {@damage 3d8} necrotic damage on a failed save, or half as much damage on a successful one.",
+        "In addition, on a failed saving throw the ghostly hands {@condition grapple} the target until the end of your next turn, and immediately move the target up to 30 feet in a direction of your choice (but not upward). On its turn, the creature can use an action to attempt to escape the grapple by making a Strength or Dexterity check (its choice) against your spell save DC. If it succeeds, the {@condition grappled} ends. "
+      ],
+
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "If you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each level above 2nd."
+        ]
+      }
+    ],
+
+    "foundryEffects": [
+    {
+      "_id": "Grapple000000001",
+      "name": "Grappled",
+      "description": "The creature is grappled until the end of the casters nex turn.",
+      "statuses": ["grappled"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["str"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "Grapple000000001"
+        }
+      ]
+    }
+  },
+      
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "strength"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "FMV"
+      ]
+    },
+    {
+      "name": "Invigorate",
+      "source": "SCGD",
+      "page": 186,
+      "level": 2,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "s": true,
+        "m" : "a syringe and a blood sample"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "hour",
+            "amount" : 1
+          },
+          "concentration" : false
+        }
+      ],
+      "entries": [
+        "Choose up to three creatures within range. Each target gains {@dice 10} temporary hit points."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3nd level or higher, the temporary hit points increases by 5 for each slot level above 2nd."
+          ]
+        }
+      ],
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "miscTags": [
+        "THP",
+        "SCT"
+      ]
+    },
+    {
+      "name": "Ocular Necrosis",
+      "source": "SCGD",
+      "page": 186,
+      "level": 2,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "Make a ranged spell attack against the creature you can see in range. If you hit, you wrack the creature with deadly toxin that causes their eyes to bleed. The creature takes {@damage 2d6} necrotic damage and is {@condition blinded} until the end of your next turn."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the necrotic damage increases by {@scaledamage 2d6|2-9|1d6} for each slot level above 2nd."
+          ]
+        }
+      ],
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+
+
+
+
+
+
+    {
+      "name": "Corrosive Blast",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a vial of acid"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "A spew of acrid chemicals erupts form the hands. Each creature in a 30-foot cone must make a Dexterity saving throw. A creature takes {@damage 10d4} acid damage on a failed save, or half as much damage on a successful one.",
+        "The acid destroys any object made of organic materials in the spell's area. A creature killed by this spell has its flesh entirely dissolved, leaving behind only a corroded skeleton."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by {@scaledamage 10d4|3-9|2d4} for each slot level above 3rd."
+          ]
+        }
+      ],
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "areaTags": [
+        "N"
+      ],
+      "miscTags": [
+        "OBJ",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Fetid Blade",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a drop of acid and a pinch of iron dust"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+
+      "entries": [
+        "You coat your weapon you touch in an acidic substance. Until the spell ends, weapon attacks made with it deal an extra {@damage 2d4} acid damage on a hit. If the weapon isn't already magic weapon, it becomes one for the duration.",
+        "In addition, a creature hit with melee attacks using the weapon must make a Constitution saving throw. On a failed save, it becomes {@condition poisoned} until the end of the attacker's next turn."
+      ],
+
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by {@scaledamage 2d4|3-9|1d4} for each slot level above 3rd."
+          ]
+        }
+      ],
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Pestilence",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a withered flower"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You infect up to three creatures you can see within range with a magic disease. At the start of each of the target's turns, it must make a Constitution saving throw. On a failed saving throw, the creature takes {@damage 3d6} necrotic damage and gains 1 level of {@condition exhaustion}. If a target succeeds on three of these saves, the spell ends for that creature.",
+        "A {@spell lesser restoration} spell cast on a target ends this spell early for that creature."
+      ],
+
+    "foundryEffects": [
+    {
+      "_id": "DisTst8kQ2Lm7XrB",
+      "name": "Magical Disease",
+      "statuses": ["exhaustion"],
+      "description": "At the start of each of the creature's turns, it must makes a Constitution saving throw. THe creature takes 3d6 necrotic damage on a failed save and one level of exhaustion. The effet ends if the target succeeds a saving throws.",
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "DisTst8kQ2Lm7XrB"
+        }
+      ]
+    }
+  },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "MT"
+      ]
+    },
+    {
+      "name": "Purge Contamination",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "100gp of alchemical fluids or holy water, which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You apply alchemical fluids or holy water to a contaminated humanoid creature while reciting an exacting magical chant which expels eldritch contaminants from its body. When you finish casting the spell, all contamination levels and mutations are removed from the creature. It then gains 1 level of {@condition exhaustion} for each contamination level removed with this spell."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Tranquilizing Toxin",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "One target you choose within range must make a Constitution saving throw or take {@damage 8d6} poison damage and become {@condition poisoned} until the end of your next turn. While {@condition poisoned} in this way the target is also {@condition stunned}. On a successful saving throw, the target takes half damage and is not {@condition poisoned}."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the poison damage increases by {@scaledamage 8d6|3-9|1d6} for each slot level above 3rd."
+          ]
+        }
+      ],
+
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrE",
+      "name": "Tranquilizing Toxin",
+      "description": "The creature is poisoned until the end of the casters next turn.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    },
+        {
+      "_id": "stunned000000001",
+      "name": "Tranquilizing Toxin Stun",
+      "description": "While the creature is poisoned by Tranquilizing Toxin its stunned.",
+      "statuses": ["stunned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrE"
+        },
+        {
+          "_id": "stunned000000001"
+        }
+      ]
+    }
+  },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned",
+        "stunned"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Venomous Aura",
+      "source": "SCGD",
+      "page": 186,
+      "level": 3,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "scales or fangs of a venomous snake"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : false
+        }
+      ],
+
+
+
+      "entries": [
+        "You emit a baleful aura which disorients creatures who approach you. Any creature that starts their turn within 10 feet of you are {@condition poisoned} until the start of their next turn."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "miscTags": [
+        "ADV"
+      ]
+    },
+
+
+
+
+
+    {
+      "name": "Blood Worm",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a jar full of leeches"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+
+      "entries": [
+        "You infect a creature you can see within range with magical disease in the form of a malignant parasite. Once per turn when a creature hits the infected target with a weapon attack, the target deals an additional {@damage 4d6} necrotic damage, and the attacker regains hit points equal to the necrotic damage dealt. Each time the infected target takes this necrotic damage, it makes a Constitution saving throw against the spell. If the saving throw succeeds, the spell ends."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the necrotic damage increases by {@scaledamage 4d6|4-9|1d6} for each slot level above 4th."
+          ]
+        }
+      ],
+
+
+      "foundryEffects": [
+    {
+      "_id": "DisTst8kQ2Lm7XrE",
+      "name": "Blood Worm Disease",
+      "description": "Once per turn when the creature is attackd, it takes additional necrotic damage and the attacker heals for that much hit points. Ecuh time the creature takes damage, make a Constitution saving throw against the spell. If the saving throw sicceeds the spell ends.",
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "DisTst8kQ2Lm7XrE"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Corpse Explosion",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You cause the triggering creature's body to explode in a violent shower of gore and infected flesh. Creatures within a 10-foot cube of a point centered on the triggering creature's body take {@damage 4d8} necrotic damage and {@damage 4d8} acid damage, or half as much damage on a successful Dexterity saving throw."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 4d8;4d8|4-9|1d8} for each slot level above 4th."
+          ]
+        }
+      ],
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic",
+        "acid"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "areaTags": [
+        "R"
+      ],
+      "miscTags": [
+        "RO"
+      ]
+    },
+    {
+      "name": "Corrupting Spores",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a dried mushroom"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "A small patch of three poison mushrooms magically sprout in a 5-foot square that you can see within range. The mushrooms emit toxic spores, and any creature that starts its turn within 10 feet of the mushroom patch must make a Constitution saving throw. On a failed save the creature takes {@damage 1d8} poison damage for each mushroom in the patch and is is {@condition poisoned} until the start of its next turn.",
+        "Until the spell ends, you can use a bonus action on you turn to cause an additional mushroom to sprout within the patch."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, one aditional mushroom sprouts with the inital patch for each slot above 4th."
+          ]
+        }
+      ],
+
+
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrF",
+      "name": "Poisoned",
+      "description": "The creature is poisoned until the end of its next turn.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrF"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "areaTags": [
+        "R"
+      ]
+    },
+    {
+      "name": "Last Rites",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a small piece of brass, a rose petal, and a drop of holy water."
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You target a creature you can see within range with a beam of holy light that shines down upon them. The target must make a Wisdom saving throw. The target takes {@damage 8d8} radiant damage on a failed save, or half as much damage on a successful one. This spell has no effect on celestials or constructs.",
+        "If you target and undead, or fiend, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If an undead or fiend is reduced to 0 hit points by this spell, it dies and its body is reduced to ash."
+      ],
+
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "If you cast this spell using a spell slot of 5th level or higher, you can target one additional creature within 30 feet of each other for each spell level for each level above 5th."
+        ]
+      }
+    ],
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "wisdom"
+      ],
+      "areaTags": [
+        "MT"
+      ]
+    },
+    {
+      "name": "Poison Wave",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a withered root and a drop of vinegar"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "A wave of poisonous fumes emanates form you. Creatures within 30 feet of you must make a Constitution saving throw. On a failed save, each creature takes {@damage 4d12} poison damage and is {@condition poisoned} until the end of your next turn. On a Successful saving throw, a creature takes half as much damage and does not, become {@condition poisoned}."
+      ],
+
+            "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 4d12|4-9|1d12} for each slot level above 4th."
+          ]
+        }
+      ],
+
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrG",
+      "name": "Poisoned",
+      "description": "The creature is poisoned until the end of its next turn.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrG"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "areaTags": [
+        "N"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+    {
+      "name": "Vitriol Ichor",
+      "source": "SCGD",
+      "page": 186,
+      "level": 4,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a vial of nitric acid and a flask of water"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "Choose a creature within range tha has natural armor or is wearing armor. You magically cause the creature's natural or manufactured armor to become corroded and brittle for the spell's duration. While its armor is corroded, the creatures's AC becomes 10 + the creatures Dexterity modifier. "
+      ],
+
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "If you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each level above 5th."
+        ]
+      }
+    ],
+
+    "foundryEffects": [
+      {
+        "foundryId": "VitrIchorAC01XYZ",
+        "name": "Corroded Armor",
+        "changes": [
+          {
+            "key": "system.attributes.ac.calc",
+            "mode": "OVERRIDE",
+            "value": "custom"
+          },
+          {
+            "key": "system.attributes.ac.formula",
+            "mode": "OVERRIDE",
+            "value": "10 + @abilities.dex.mod"
+          }
+        ],
+        "transfer": false
+      }
+    ],
+    "_foundryActivity": {
+      "allActivities": {
+        "effects": [
+          {
+            "_id": "VitrIchorAC01XYZ"
+          }
+        ]
+      }
+    },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Acid Rain",
+      "source": "SCGD",
+      "page": 186,
+      "level": 5,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cylinder",
+        "distance": {
+          "type": "feet",
+          "amount": 150
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "pinch of sulfur and ground cloal"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "Until the spell ends, acid rain falls in a 40-foot radius cylinder centered on a point you choose within range. The area is lightly obscured, and exposed flames in the area are doused.",
+        "Chemical pools accumulate on the ground in the area, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it takes {@damage 3d6} acid damage and must make a Dexterity saving throw. On a failed save, it falls {@condition prone}, in the pools, taking and additional {@damage 3d6} acid damage."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the acid damage increases by {@scaledamage 3d6;3d6|5-9|1d6} for each slot level above 5th."
+          ]
+        }
+      ],
+
+          "foundryEffects": [
+    {
+      "_id": "prone00000000001",
+      "name": "Prone",
+      "description": "The creature is prone",
+      "statuses": ["prone"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["dex"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "prone00000000001"
+        }
+      ]
+    }
+  },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "areaTags": [
+        "Y"
+      ],
+      "miscTags": [
+        "DFT",
+        "OBS",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Nerve Gas",
+      "source": "SCGD",
+      "page": 186,
+      "level": 5,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 10
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "samples of phosphate and chlorine mixees with a drop of alcohol"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 10
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You create a 10-foot-radius sphere of toxic fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. The fog's area is heavily obscured",
+        "When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make an Intelligence saving throw, On a failed saving throw, the creature takes {@damage 3d6} psychic damage and becomes {@condition stunned} until the start of its next turn. On a Successful saving throw, the creature takes half as much damage and is not stunned. Creatures are affected even if they hold their breath or don't need to breath."
+      ],
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 3d6|5-9|1d6} for each slot level above 5th."
+          ]
+        }
+      ],
+
+      
+    "foundryEffects": [
+    {
+      "_id": "stunned000000003",
+      "name": "Stunned",
+      "description": "The creature is stunned until the start of its next turn.",
+      "statuses": ["stunned"],
+      "duration": {
+        "value": 1,
+        "units": "turns"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["int"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "stunned000000003"
+        }
+      ]
+    }
+  },
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "psychic"
+      ],
+      "savingThrow": [
+        "intelligence"
+      ],
+      "conditionInflict": [
+        "stunned"
+      ],
+      "areaTags": [
+        "R"
+      ],
+      "miscTags": [
+        "OBS",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Septic Shock",
+      "source": "SCGD",
+      "page": 186,
+      "level": 5,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 150
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of rotten liver"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "Choose a creature you can see within range that doesn't have all its hit points. You infect the target's wounds with putrefying bacteria. The target must make a Constitution saving throw. If it has less than half its maximum hit points remaining, it makes the saving throw with disadvantage. On a failed save, the target takes {@damage 10d8} necrotic damage and gains 1 level of {@condition exhaustion}. On a successful save, it takes half as much damage and does not gain {@condition exhaustion}. On a successful save, it takes half as much damage and does not gain any {@condition exhaustion} levels."
+      ],
+
+      "foundryEffects": [
+    {
+      "_id": "ExhTst8kQ2Lm7XrH",
+      "name": "Exhaustion",
+      "description": "The creature suffers one level of exhasution.",
+      "statuses": ["exhaustion"],
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "ExhTst8kQ2Lm7XrH"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Toxic Barrage",
+      "source": "SCGD",
+      "page": 186,
+      "level": 5,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "four death cap mushrooms"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You create four rays of pure poison and hurl them at targets within range. You can hurl them at one target or several.",
+        "Make a ranged attack for each ray. On a hit, the target takes {@damage 3d6} poison damage. If a target is hit by one or more of these rays, it must make a Constitution saving throw. On a failed save, the target is {@condition poisoned} for 1 minute. While poisoned the way, the target can repeat the saving throw at the end of each if its turns. On a success. it is no longer poisoned."
+      ],
+
+    "entriesHigherLevel": [
+      {
+        "type": "entries",
+        "name": "At Higher Levels",
+        "entries": [
+          "When you cast this spell using a spell slot of 6th level or higher, you create one additional ray for each slot level above 5th."
+        ]
+      }
+    ],
+
+        "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrI",
+      "name": "Poisoned",
+      "description": "The creature is poisoned for one minute. The creature can repeat the Constitution saving throw at then end of each of its turns.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrI"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ],
+      "miscTags": [
+        "SCL"
+      ]
+    },
+
+
+
+    {
+      "name": "Mephitic Vapors",
+      "source": "SCGD",
+      "page": 186,
+      "level": 6,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "sphere",
+        "distance": {
+          "type": "feet",
+          "amount": 20
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a vial of chlorine"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 10
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You douse a 20-foot radius area centered on a point you can see within range with acrid slime, which remains for the spell's duration. The area becomes difficult terrain, and any creature wholly within the area is blinded and can't  take reactions. A creature who starts its turn in the area must succeed on a Constitution saving throw or take {@damage 2d8} poison damage and {@damage 2d8} acid damage and gain one level of exhaustion."
+      ],
+
+    "foundryEffects": [
+    {
+      "_id": "blinded000000001",
+      "name": "Blinded",
+      "description": "The creature is Blinded until standing in the area.",
+      "statuses": ["blinded"],
+      "duration": {
+        "value": 100,
+        "units": "turns"
+      },
+      "transfer": false
+    },
+    {
+      "_id": "ExhTst8kQ2Lm7XrJ",
+      "name": "Exhaustion",
+      "description": "The creature suffers one level of exhasution.",
+      "statuses": ["exhaustion"],
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "allActivities": {
+      "effects": [
+        {
+          "_id": "blinded000000001"
+        },
+        {
+          "_id": "ExhTst8kQ2Lm7XrJ"
+        }
+      ]
+    }
+  },
+
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 7th level or higher, the exploding acid damage increases by {@scaledamage 2d8;2d8|6-9|1d8} for each slot level above 6th."
+          ]
+        }
+      ],
+
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison",
+        "acid"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "R"
+      ],
+      "miscTags": [
+        "DFT",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Vile Necrosis",
+      "source": "SCGD",
+      "page": 186,
+      "level": 6,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a vial of coagulated blood"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You point your finger towards a creature within range, projecting a pale green beam of debilitating energy at them. Make a ranged spell attack against the target. On a hit, the target takes {@damage 12d6} necrotic damage, and it becomes weakened. While weakened by this spell, a target deals half damage with weapon attacks and spells.",
+        "A weakened target can make a Constitution saving throw at the end of each of its turns. On a successful save, the weakness ends."
+      ],
+
+      "foundryEffects": [
+      {
+        "foundryId": "VileNecrosisEff1",
+        "name": "Weakened — Vile Necrosis",
+        "changes": [],
+        "description": "While weakened by Vile Necrosis, this creature deals half damage with weapon attacks and spells. The creature can make a Constitution saving throw at the end of each of its turns, ending the weakness on a successful save.",
+        "transfer": false
+      }
+    ],
+    "_foundryActivity": {
+      "allActivities": {
+        "effects": [
+          {
+            "_id": "VileNecrosisEff1"
+          }
+        ]
+      }
+    },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Grievous Wounds",
+      "source": "SCGD",
+      "page": 186,
+      "level": 7,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a needle and several stitches"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "Choose a creature you can see within range. You momentarily strip the target's physiology of all resilience, enough that a mere scratch can become a terrible injury. Until the end of your next turn, the target loses any damage resistance or immunities, becomes vulnerable to all damage, and makes all its saving throws with disadvantage."
+      ],
+      "foundryEffects": [
+        {
+          "foundryId": "GrievWoundsFx01X",
+          "name": "Grievous Wounds",
+          "changes": [
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-acid"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-bludgeoning"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-cold"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-fire"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-force"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-lightning"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-necrotic"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-piercing"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-poison"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-psychic"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-radiant"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-slashing"
+            },
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "-thunder"
+            },
+
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-acid"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-bludgeoning"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-cold"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-fire"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-force"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-lightning"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-necrotic"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-piercing"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-poison"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-psychic"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-radiant"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-slashing"
+            },
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "-thunder"
+            },
+
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "acid"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "bludgeoning"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "cold"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "fire"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "force"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "lightning"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "necrotic"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "piercing"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "poison"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "psychic"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "radiant"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "slashing"
+            },
+            {
+              "key": "system.traits.dv.value",
+              "mode": "ADD",
+              "value": "thunder"
+            }
+          ],
+          "description": "Until the end of your next turn, this creature loses all damage resistances and immunities, becomes vulnerable to all damage, and makes all saving throws with disadvantage.",
+          "transfer": false
+        }
+      ],
+      "_foundryActivity": {
+        "allActivities": {
+          "effects": [
+            {
+              "_id": "GrievWoundsFx01X"
+            }
+          ]
+        }
+      },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Miasma",
+      "source": "SCGD",
+      "page": 186,
+      "level": 7,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "a freshly harvested corpse lily"
+      },
+      "duration": [
+        {
+          "type" : "timed",
+          "duration" : {
+            "type" : "minute",
+            "amount" : 1
+          },
+          "concentration" : true
+        }
+      ],
+      "entries": [
+        "You Create a wall of sickly, yellowish green, toxin fumes on a solid surface within range. You can make the wall up to 60 foot long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The Wall is opaque and lasts far the duration.",
+        "While the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 10d4} acid damage, or half as much damage on a successful save.",
+        "One side of the wall, selected by you when you cast this spell, emits toxic fumes. It deals {@damage 8d8} poison damage to each creature that ends its turn within 30 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn. The other side of the wall deals no damage.",
+        "A creature who takes poison from the wall make a Constitution saving throw or become poisoned from the duration of the spell."
+      ],
+
+            "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 8th level or higher, the damage increases by {@scaledamage 8d8|7-9|2d8} for each slot level above 7th."
+          ]
+        }
+      ],
+
+
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrK",
+      "name": "Poisoned",
+      "description": "The creature is poisoned.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "minutes"
+      },
+      "transfer": false
+    }
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrK"
+        }
+      ]
+    }
+  },
+
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "acid",
+        "poison"
+      ],
+      "savingThrow": [
+        "dexterity",
+        "constitution"
+      ],
+      "areaTags": [
+        "W"
+      ],
+      "miscTags": [
+        "OBS",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Breath of Nightshade",
+      "source": "SCGD",
+      "page": 186,
+      "level": 8,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "A pair of deadly nighshade flowers"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You exhale a 60-foot-cone of lethal poison. Each creature in the area when you cast the spell must make a Constitution saving throw. On a failed save, the creature becomes {@condition poisoned} for 1 hour. While {@condition poisoned} by this spell, the creature is paralyzed.",
+        "The spell ends for an affected creature if it takes any damage."
+      ],
+
+      
+    "foundryEffects": [
+    {
+      "_id": "PsnTst8kQ2Lm7XrJ",
+      "name": "Breath of Nightshade Poisoned",
+      "description": "The creature is poisoned for 1 hour.",
+      "statuses": ["poisoned"],
+      "duration": {
+        "value": 1,
+        "units": "hours"
+      },
+      "transfer": false
+    },
+    {
+      "_id": "paralized0000004",
+      "name": "Paralized",
+      "description": "The creature is paralyzed while Poisoned by Breath of Nightshade.",
+      "statuses": ["paralized"],
+      "duration": {
+        "value": 1,
+        "units": "hours"
+      },
+      "transfer": false
+    }
+
+  ],
+
+  "_foundryActivity": {
+    "save": {
+      "saveAbility": ["con"],
+      "saveDcCalculation": "spellcasting",
+      "saveDcFormula": "",
+      "effects": [
+        {
+          "_id": "PsnTst8kQ2Lm7XrJ"
+        },
+        {
+          "_id": "paralized0000004"
+        }
+      ]
+    }
+  },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "savingThrow": [
+        "constitution"
+      ],
+      "conditionInflict": [
+        "poisoned",
+        "paralyzed"
+      ],
+      "areaTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Plague Wind",
+      "source": "SCGD",
+      "page": 186,
+      "level": 8,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "cone",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "mucus from ghoul"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You summon a rolling wind of flesh devouring disease and excruciating blood boiling fumes that sweep over the area emanating from you in a 120-foot cone. Creatures in the area must make a Constitution saving throw. On a failed saving throw a creature takes {@damage 5d8} poison damage and {@damage 5d8} necrotic damage or half as much damage on a success. After taking this damage, any affected creature with 25 hit points or fewer remaining immediately dies and is reduced to a weathered skeleton as their flesh and soft tissue blows off like ash."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison",
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Pandemic",
+      "source": "SCGD",
+      "page": 186,
+      "level": 9,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "the fetid corpse of a plage rat"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You infect one creature you can see within a range with deadly and highly infectious disease which lasts until it is cured by greater restoration, heal or wish. Other spells and magical effect which remove diseases fail to cure the infection caused by this spell.",
+        "While infected, a creature must make a Constitution saving throw at the start of each of its turns, On a failed saving throw, it takes {@damage 10d8} necrotic damage and becomes incapacitated until the start of its next turn. On a successful save, it takes half as much damage and is not incapacitated. An infected creature must make the saving throw at the start of each of its turns until it dies or is cured.",
+        "A creature who starts its turn within 10 feet of a creature infected by this spell must make a Constitution saving throw, In a failed saving throw, that creature contracts the infection.",
+        "When you cast the spell, you can choose yourself and up to eight other creatures to be uaffected by the infection caused by this casting of the spell."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "necrotic"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Touch of Death",
+      "source": "SCGD",
+      "page": 186,
+      "level": 9,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m" : "the finger of a hag"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "Make a melee spell attack against a target within 5 feet of you. On a hit, the target takes {@damage 200} poison damage. This damage ignores any resistance or immunity the creature has to poison damage, and can't be reduced or prevented in any way.",
+        "The potent poison lingers in the targets body and pulls it towards death. A target reduced to zero hit points by this poison damage automatically fails death saving throws until it finishes a long rest. A heal or greater restoration spell cast on the target also ends this effect."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      },
+      "damageInflict": [
+        "poison"
+      ],
+      "spellAttack": [
+        "M"
+      ],
+      "areaTags": [
+        "ST"
+      ]
+    },
+
+    {
+      "name": "Chain Lightning",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Chain Lightning",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Circle of Death",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Circle of Death",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Create Undead",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Create Undead",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Disintegrate",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Disintegrate",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Eyebite",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Eyebite",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Flesh to Stone",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Flesh to Stone",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Globe of Invulnerability",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Globe of Invulnerability",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Harm",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Harm",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Heal",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Heal",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "True Seeing",
+      "source": "SCGD",
+      "_copy": {
+        "name": "True Seeing",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+
+
+        {
+      "name": "Etherealness",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Etherealness",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },    
+    {
+      "name": "Finger of Death",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Finger of Death",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Forcecage",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Forcecage",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Plane Shift",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Plane Shift",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Prismatic Spray",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Prismatic Spray",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Regenerate",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Regenerate",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Resurrection",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Resurrection",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+
+        {
+      "name": "Antimagic Field",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Antimagic Field",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Antipathy/Sympathy",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Antipathy/Sympathy",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Clone",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Clone",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Dominate Monster",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Dominate Monster",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Feeblemind",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Feeblemind",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Mind Blank",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Mind Blank",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Power Word Stun",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Power Word Stun",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Astral Projection",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Astral Projection",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Foresight",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Foresight",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Mass Heal",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Mass Heal",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Power Word Kill",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Power Word Kill",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "Time Stop",
+      "source": "SCGD",
+      "_copy": {
+        "name": "Time Stop",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "True Polymorph",
+      "source": "SCGD",
+      "_copy": {
+        "name": "True Polymorph",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    },
+        {
+      "name": "True Resurrection",
+      "source": "SCGD",
+      "_copy": {
+        "name": "True Resurrection",
+        "source": "PHB"
+      },
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Apothecary",
+            "source": "SCGD"
+          }
+        ]
+      }
+    }
+
+
+
+  ],
+
+
+
+
+  "optionalfeature": [
+    {
+      "name": "Acquired Tolerance",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You have advantage on saving throws against being {@condition poisoned}, and you have {@variantrule resistance|XPHB} against poison damage.",
+        "In addition, you automatically succeed on saving throws against your own apothecary spells, and never rake damage from your own apothecary spells."
+      ],
+      "resist": [
+        "poison"
+      ]
+    },
+    {
+      "name": "Adrenaline Surge",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "A creature at 0 hit points who regains hit points from a spell you cast using an apothecary spell slot gains {@variantrule resistance|XPHB} to all damage and has advantage on saving throws until the end of its next turn. It gains advantage on the first attack roll it makes on its next turn."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Anatomical Precision",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you make a weapon attack, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls."
+      ]
+    },
+    {
+      "name": "Anesthesiology",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can cast {@spell hold person} without expending a spell slot or requiring material components. You must finish a long rest before you can use this theory on the same creature again."
+      ],
+      "additionalSpells": [
+      {
+        "innate": {
+            "_": [
+              "hold person"
+            ]
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 14,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bedside Manner",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You gain proficiency in the Insight and Persuasion skills. Your proficiency bonus is doubled for any ability check you make that uses either of these skills."
+      ],
+      "skillProficiencies": [
+        {
+          "insight": true,
+          "persuasion": true
+        }
+      ],
+      "foundryEffects": [
+        {
+          "name": "Bedside Manner",
+          "changes": [
+            {
+              "key": "system.skills.ins.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            },
+            {
+              "key": "system.skills.per.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Caustic Formulae",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "Once per turn when you deal damage to a creature or object with an apothecary spell, you can expend an apothecary spell slot to deal {@damage 2d4} extra acid damage to that target, plus another {@damage 2d4} per level of the spell slot."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "foundryActivities": [
+        {
+          "type": "utility",
+          "name": "Caustic Formulae",
+          "activation": {
+            "type": "special",
+            "value": null,
+            "condition": "Once per turn when you deal damage with an apothecary spell.",
+            "override": false
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": false
+          },
+          "description": {
+            "chatFlavor": "Deal extra acid damage to the creature or object damaged by your apothecary spell."
+          },
+          "duration": {
+            "concentration": false,
+            "override": false
+          },
+          "effects": [],
+          "range": {
+            "override": false
+          },
+          "target": {
+            "prompt": true,
+            "template": {
+              "contiguous": false,
+              "units": "ft",
+              "stationary": false
+            },
+            "affects": {
+              "count": "1",
+              "type": "creatureOrObject",
+              "choice": false
+            },
+            "override": false
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": [],
+            "max": ""
+          },
+          "roll": {
+            "formula": "2d4 * @spells.pact.level ",
+            "name": "Caustic Formulae Damage",
+            "prompt": true,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clinical Conditioning",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You gain proficiency in Constitution saving throws."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+     "foundryEffects": [
+      {
+        "name": "Clinical Conditioning",
+        "changes": [
+          {
+            "key": "system.abilities.con.proficient",
+            "mode": "UPGRADE",
+            "value": "1"
+          }
+        ],
+        "transfer": true
+      }
+    ]
+    },
+    {
+      "name": "Combat Medic",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You gain proficiency with martial weapons and shields."
+      ],
+      "weaponProficiencies": [
+        {
+          "martial": true
+        }
+      ],
+      "foundryEffects": [
+         {
+           "name": "Combat Medic",
+           "changes": [
+             {
+               "key": "system.traits.armorProf.value",
+               "mode": "ADD",
+               "value": "shl"
+             }
+           ],
+           "transfer": true
+         }
+       ]
+    },
+    {
+      "name": "Corrosive Compound",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you deal poison damage with your apothecary spells, you can choose to deal half the spell's damage as poison damage and half the spell's damage as acid damage instead."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cosmetic Surgery",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can spend 8 hours performing an occult surgical procedure upon a willing creature, permanently transforming its appearance. You decide what the creature looks like, including facial features, the sound of its voice, hair length, coloration, and distinguishing characteristics, but none of its game statistics change. You can't alter the size of a creature, and its basic shape stays the same. The resulting transformation is non-magical, however, a greater restoration spell or similar magic cast upon the creature can restore it to its original appearance."
+      ]
+    },
+    {
+      "name": "Critical Condition",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When a creature rolls a natural 1 on a saving throw made against one of your apothecary spells that deals damage, roll all of the spell's damage dice twice and add them together. Then add any relevant modifiers as normal to determine the damage that creature takes from the spell."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Diagnosis",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can take the Help action as a bonus action on your turn."
+      ]
+    },
+    {
+      "name": "Doctor's Note",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can cast {@spell sending} at-will. You must finish a long rest before you can use this theory to contact the same creature again."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "_": [
+              "sending"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Double Dose",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you cast an apothecary spell using an apothecary spell slot that targets a single creature and restores hit points to that creature, you can target an additional creature within range."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Extracurricular Research",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You learn two additional cantrips of your choice from any class's spell list. These cantrips become apothecary cantrips for you."
+      ]
+    },
+    {
+      "name": "Inoculation",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You have resistance to necrotic damage, and your hit point maximum can't be reduced. In addition, you are immune to diseases."
+      ],
+      "foundryEffects": [
+        {
+          "name": "Inoculation",
+          "changes": [
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "necrotic"
+            },
+            {
+              "key": "system.attributes.hp.tempmax",
+              "mode": "UPGRADE",
+              "value": "0"
+            },
+            {
+              "key": "system.traits.ci.value",
+              "mode": "ADD",
+              "value": "diseased"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Interdisciplinary Practice",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you use your action to cast a spell, you can make one weapon attack as a bonus action."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 14,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Laboratory Assistant",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You learn the spell {@spell find familiar}, and always have this spell prepared. It doesn't count against the number of apothecary spells you can prepare."
+      ],
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "find familiar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Liability Insurance",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can cast {@spell contingency } once on yourself without material components. You can't do so again until you finish a long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 14,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "_": {
+              "daily": {
+                "1e": [
+                  "contingency"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Medical Expertise",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You gain proficiency in the Medicine and Nature skills. Your proficiency bonus is doubled for any ability check you make that uses either of these skills."
+      ],
+      "skillProficiencies": [
+        {
+          "medicine": true,
+          "nature": true
+        }
+      ],
+      "foundryEffects": [
+        {
+          "name": "Medical Expertise",
+          "changes": [
+            {
+              "key": "system.skills.med.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            },
+            {
+              "key": "system.skills.nat.value",
+              "mode": "UPGRADE",
+              "value": "2"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Medical Lexicon",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You learn six languages of your choice. You can cast {@spell detect poison and disease} at will."
+      ],
+      "languageProficiencies": [
+        {
+          "any": 6
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "_": [
+              "detect poison and disease"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nerve Agent",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you deal poison damage with your apothecary spells, you can choose to deal psychic damage instead."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 14,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Noxious Blood",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When a creature hits you with a melee attack while within 5 feet of you, it takes poison damage equal to {@damage 1d6} + your Intelligence modifier."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pharmacology",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you cast a spell using an apothecary spell slot or your Greater Formula feature which restores hit points to a creature, the creature regains additional hit points equal to your Intelligence modifier."
+      ]
+    },
+    {
+      "name": "Physiological Analysis",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its physiology. The Game Master reveals to you two of the following characteristics of your choice: Any one ability score; Armor Class; Current hit points; Resistances (if any); Immunities (if any); Vulnerabilities (if any). Alternatively, you can spend 1 minute observing a corpse. After 1 minute, you determine the cause of death."
+      ]
+    },
+    {
+      "name": "Practical Resuscitation",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you cast a spell that has the sole effect of restoring a creature to life (but not undeath), such as {@spell raise dead}, you don't need material components to cast the spell if the creature has died within the past hour."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Putrefaction",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "Your apothecary spells and abilities ignore undead creatures' resistance or immunity to poison damage and immunity to the poisoned condition."
+      ]
+    },
+    {
+      "name": "Rapid Response",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you cast an apothecary spell that restores hit points to a creature, before or after casting the spell, you can move your speed without provoking opportunity attacks."
+      ]
+    },
+    {
+      "name": "Routine Procedure",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can cast {@spell lesser restoration} at-will without expending a spell slot."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "_": [
+              "lesser restoration"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stolen Secrets",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You learn one spell from any class's spell list. It must be of a level for which you have apothecary spell slots or lower. The spell is treated as an apothecary spell for you, and doesn't count against the number of apothecary spells you know."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=1-5",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Subject Preparation",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you hit a creature with a melee weapon attack, that creature has disadvantage on the next saving throw it makes against an apothecary spell you cast before the end of your next turn."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Surgeon's Instinct",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You have blindsight out to a range of 10 feet."
+      ],
+
+      "foundryEffects": [
+        {
+          "name": "Surgeon's Instinct",
+          "changes": [
+            {
+              "key": "system.attributes.senses.ranges.blindsight",
+              "mode": "OVERRIDE",
+              "value": "10"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Surgical Strikes",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You can attack twice, instead of once, when you take the Attack action on your turn."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Toxicology",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You add your Intelligence modifier to the damage rolls of spells that deal poison damage."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Triage",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "You learn the {@spell spare the dying} cantrip if you don't know it already. When you cast this cantrip, it has a range of 60 feet."
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              "spare the dying#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Unfailing Focus",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you fail a Constitution saving throw to maintain concentration on an apothecary spell, you can choose to succeed instead. Once you use this feature, you can't do so again until you finish a short or long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "foundryActivities": [
+        {
+          "type": "utility",
+          "name": "Unfailing Focus",
+          "activation": {
+            "type": "reaction",
+            "value": 1,
+            "override": false
+          },
+          "description": {
+            "chatFlavor": "After failing a Constitution saving throw to maintain concentration on an Apothecary spell, use Unfailing Focus to succeed instead."
+          },
+          "uses": {
+            "spent": 0,
+            "max": "1",
+            "recovery": [
+              {
+                "period": "sr",
+                "type": "recoverAll"
+              },
+              {
+                "period": "lr",
+                "type": "recoverAll"
+              }
+            ]
+          },
+          "roll": {
+            "formula": "0",
+            "name": "Unfailing Focus",
+            "prompt": false,
+            "visible": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Venomous Instruments",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you hit a creature with a weapon attack, the creature takes extra poison damage equal to your Intelligence modifier."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ],
+      "foundryEffects": [
+        {
+          "name": "Venomous Instruments",
+          "changes": [
+            {
+              "key": "system.bonuses.mwak.damage",
+              "mode": "ADD",
+              "value": "@abilities.int.mod[poison]"
+            },
+            {
+              "key": "system.bonuses.rwak.damage",
+              "mode": "ADD",
+              "value": "@abilities.int.mod[poison]"
+            }
+          ],
+          "transfer": true
+        }
+      ]
+    },
+    {
+      "name": "Virulence",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When you roll a 1 on a damage die for an apothecary spell that deals poison damage, you can reroll the die. You must use the new result, even if the new roll is a 1."
+      ]
+    },
+    {
+      "name": "Vital Signs",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "When a creature you can see within 30 feet of you fails a saving throw or death saving throw, you can use your reaction to add your Intelligence modifier to the creature's roll, potentially turning a failure into a success. You must finish a short rest before you can use this theory on the same creature again."
+      ],
+      "foundryActivities": [
+        {
+          "type": "utility",
+          "name": "Vital Signs",
+          "activation": {
+            "type": "reaction",
+            "value": 1,
+            "override": false
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses"
+              }
+            ],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": false
+          },
+          "description": {
+            "chatFlavor": "Add your Intelligence modifier to the target's failed saving throw or death saving throw."
+          },
+          "target": {
+            "prompt": true,
+            "template": {
+              "contiguous": false,
+              "units": "ft",
+              "stationary": false
+            },
+            "affects": {
+              "count": "1",
+              "type": "creature",
+              "choice": false
+            },
+            "override": false
+          },
+          "uses": {
+            "spent": 0,
+            "max": "1",
+            "recovery": [
+              {
+                "period": "sr",
+                "type": "recoverAll"
+              }
+            ]
+          },
+          "roll": {
+            "formula": "@abilities.int.mod",
+            "name": "Vital Signs Bonus",
+            "prompt": false,
+            "visible": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vivisection",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:ET"
+      ],
+      "entries": [
+        "Your weapon attacks score a critical hit on a 19 or 20."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 6,
+            "class": {
+              "name": "Apothecary",
+              "source": "SCGD",
+              "visible": false
+            }
+          }
+        }
+      ]
+    },
+
+
+
+    {
+      "name": "Greater Formula (6th)",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose a 6th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 11
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=6|class=Apothecary",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Spell 7th",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose a 7th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ]
+    },
+
+
+        {
+      "name": "Kurva",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose a 7th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ]
+    },
+
+        {
+      "name": "Anyád",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose a 7th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ]
+    },
+
+    {
+      "name": "Spell 8th",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose an 8th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 15
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=8|class=Apothecary",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Spell 9th",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose a 9th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 17
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=9|class=Apothecary",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "SPell 6th",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose an additional 6th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 19
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=6|class=Apothecary",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Spell 7th",
+      "source": "SCGD",
+      "featureType": [
+        "SCGD:GF"
+      ],
+      "entries": [
+        "Choose an additional 7th-level Apothecary spell as a Greater Formula. Cast it once without a spell slot per long rest."
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 20
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "_": [
+              {
+                "choose": "level=7|class=Apothecary",
+                "count": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+
+  ]
+}
